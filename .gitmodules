@@ -1,0 +1,3 @@
+[submodule "hardware-rev1/design_data/SlimDash-rev1-kicad/external/mzm_kicad"]
+	path = hardware-rev1/design_data/SlimDash-rev1-kicad/external/mzm_kicad
+	url = https://github.com/mizma/mzm_kicad.git
