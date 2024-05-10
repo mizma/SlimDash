@@ -11,4 +11,5 @@
   (lib (name "kiswitch_Switch_Keyboard_Hotswap_Kailh")(type "KiCad")(uri "${KIPRJMOD}/external/mzm_kicad/footprints/kiswitch_kiswitch/kiswitch_Switch_Keyboard_Hotswap_Kailh.pretty")(options "")(descr ""))
   (lib (name "kiswitch_Switch_Keyboard_Hybrid")(type "KiCad")(uri "${KIPRJMOD}/external/mzm_kicad/footprints/kiswitch_kiswitch/kiswitch_Switch_Keyboard_Hybrid.pretty")(options "")(descr ""))
   (lib (name "kiswitch_Switch_Keyboard_Kailh")(type "KiCad")(uri "${KIPRJMOD}/external/mzm_kicad/footprints/kiswitch_kiswitch/kiswitch_Switch_Keyboard_Kailh.pretty")(options "")(descr ""))
+  (lib (name "Keebio-Parts")(type "KiCad")(uri "${KIPRJMOD}/external/mzm_kicad/footprints/Keebio-Parts.pretty")(options "")(descr ""))
 )
