@@ -222,7 +222,33 @@ outlines:
     - what: outline
       name: screw_holes_left
       operation: subtract
-  coverplate_left:
+  baseplate_right:
+    - what: outline
+      name: board_left
+    - what: polygon
+      operation: subtract
+      points:
+      - ref: inner_icone_irthree
+        shift: [0.5U+2,0.5U+2]
+      - ref: inner_icone_irthree
+        shift: [0.5U+2,-3U-1]
+      - ref: inner_icone_irthree
+        shift: [2U+2,-3.9U-1]
+      - ref: inner_icone_irthree
+        shift: [2U+2,0.5U+2]
+      fillet: 2
+    - what: rectangle
+      operation: subtract
+      where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
+      size: [14.5, 14]
+    - what: rectangle
+      operation: subtract
+      where: thumb_tctwo_trone
+      size: [1.8U,U-6.5]
+    - what: outline
+      name: screw_holes_left
+      operation: subtract
+  coverplate_both:
     - what: outline
       name: board_left
     - what: polygon
@@ -240,7 +266,7 @@ outlines:
     - what: outline
       name: screw_holes_cover
       operation: subtract
-  backplate_left1:
+  backplate_1left:
     - what: outline
       name: board_left
     - what: outline
@@ -255,7 +281,28 @@ outlines:
       size: [17, 10]
       adjust:
         shift: [-1.25,-2.4]
-  backplate_left2:
+  backplate_1right:
+    - what: outline
+      name: board_left
+    - what: outline
+      name: thru_holes_cover
+      operation: subtract
+    - what: outline
+      name: thru_holes_left
+      operation: subtract
+    - what: rectangle
+      operation: subtract
+      where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
+      size: [17, 10]
+      adjust:
+        shift: [1.25,-2.4]
+    - what: rectangle
+      operation: subtract
+      where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
+      size: [2, 5.5]
+      adjust:
+        shift: [8,3]
+  backplate_2both:
     - what: outline
       name: board_left
     - what: outline
@@ -264,7 +311,7 @@ outlines:
     - what: outline
       name: screw_holes_left
       operation: subtract
-  backplate_left3:
+  backplate_3both:
     - what: outline
       name: board_left
     - what: polygon
@@ -285,46 +332,8 @@ outlines:
     - what: outline
       name: screw_holes_left
       operation: subtract
-  board_right:
-    - what: polygon
-      operation: stack
-      points:
-      - ref: mirror_lower_lcone_lrone
-        shift: [-0.5U-2,-0.5U-2]
-      - ref: mirror_matrix_mcone_mrfour
-        shift: [-0.5U-2,0.5U+2]
-      - ref: mirror_matrix_mcfour_mrfour
-        shift: [-0.5U-2,0.5U+2]
-      - ref: mirror_matrix_mcfour_mrfour
-        shift: [0.5U+2,0.5U+2]
-      - ref: mirror_matrix_mcsix_mrfour
-        shift: [0.5U+2,0.5U+2]
-      - ref: mirror_inner_icone_irthree
-        shift: [5, 0.5U+2]
-      - ref: mirror_inner_icone_irthree
-        shift: [1.1U, 0.5U+2]
-      - ref: mirror_inner_icone_irthree
-        shift: [1.5U+3, 0.3U]
-      - ref: mirror_inner_icone_irthree
-        shift: [1.5U+3, -3.6U]
-      - ref: mirror_thumbOuter_tOcone_tOrone
-        shift: [0.5U+2, -0.5U-2]
-      - ref: mirror_lower_lcone_lrone
-        shift: [4U+5.5,-0.5U-2]
-      fillet: 3
-  baseplate_right:
-    - what: outline
-      name: board_right
-    - what: rectangle
-      operation: subtract
-      where: /^mirror_.*/
-      size: [14.5, 14]
-    - what: rectangle
-      operation: subtract
-      where: mirror_thumb_tctwo_trone
-      size: [1.8U,U-6.5]
 pcbs:
-  slimdash_left:
+  slimdash:
     outlines:
       main:
         outline: board_left
@@ -332,11 +341,15 @@ pcbs:
         outline: thru_holes_left
       plate_mount_hole:
         outline: thru_holes_cover
+      # Following Dwgs/Cmts are for layout debugging
       baseplate_left:
         outline: baseplate_left
         layer: "Cmts.User"
-      backplate_left1:
-        outline: backplate_left1
+      backplate_1left:
+        outline: backplate_1left
+        layer: "Dwgs.User"
+      backplate_1right:
+        outline: backplate_1right
         layer: "Dwgs.User"
     footprints:
       choc_hotswap:
@@ -358,29 +371,4 @@ pcbs:
           to: "{{row_net}}"
         adjust:
           shift: [8,3]
-          rotate: 270
-  slimdash_right:
-    outlines:
-      main:
-        outline: board_right
-    footprints:
-      choc_hotswap:
-        what: choc
-        where: /^mirror_.*/
-        params:
-          keycaps: true
-          reverse: false
-          hotswap: true
-          from: "{{column_net}}"
-          to: "{{colrow}}"
-        adjust:
-          rotate: 180
-      diode:
-        what: diode
-        where: /^mirror_.*/
-        params:
-          from: "{{colrow}}"
-          to: "{{row_net}}"
-        adjust:
-          shift: [-8,-3]
           rotate: 270
