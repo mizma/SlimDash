@@ -1,0 +1,254 @@
+meta:
+  engine: 4.1.0
+# U is a predefined unit of measure that means 19.05mm, which is MX spacing (u is 19.00mm)
+points:
+  zones:
+    matrix:
+      anchor.shift: [50,-100] # Fix KiCad placement
+      columns:
+        mcone:
+          key.column_net: COL1
+        mctwo:
+          key.column_net: COL2
+        mcthree:
+          key.stagger: 0.25U
+          key.column_net: COL3
+        mcfour:
+          key.stagger: 0.125U
+          key.column_net: COL4
+        mcfive:
+          key.stagger: -0.125U
+          key.column_net: COL5
+        mcsix:
+          key.stagger: -0.125U
+          key.column_net: COL6
+      rows:
+        mrone:
+          padding: U
+          row_net: ROW2
+        mrtwo:
+          padding: U
+          row_net: ROW3
+        mrthree:
+          padding: U
+          row_net: ROW4
+        mrfour:
+          padding: U
+          row_net: ROW5
+    inner:
+      anchor.shift: [50+6u,-100]
+      columns:
+        icone:
+          key.stagger: 0.625U
+          key.column_net: COL7
+      rows:
+        irone:
+          padding: U
+          row_net: ROW3
+        irtwo:
+          padding: U
+          row_net: ROW4
+        irthree:
+          padding: U
+          row_net: ROW5
+    lower:
+      anchor.shift: [50, -100-U]
+      columns:
+        lcone:
+          key.column_net: COL1
+        lctwo:
+          key.column_net: COL2
+        lcthree:
+          key.stagger: 0.25U
+          key.column_net: COL3
+        lcfour:
+          key.stagger: 0.125U
+          key.column_net: COL4
+      rows:
+        lrone:
+          padding: U
+          row_net: ROW1
+    thumb:
+      anchor:
+        ref: matrix_mcsix_mrone
+        shift: [-0.4U, -1.2U]
+        rotate: -30
+      columns:
+        tcone:
+          key.column_net: COL5
+        tctwo:
+          key.stagger: 0.5U
+          key.width: 2U
+          key.rotate: 90
+          key.column_net: COL6
+      rows:
+        trone:
+          padding: U
+          row_net: ROW1
+    thumbOuter:
+      anchor:
+        ref: thumb_tcone_trone
+        shift: [2U,0]
+      columns:
+        tOcone:
+          key.column_net: COL7
+      rows:
+        tOrone:
+          padding: U
+          row_net: ROW1
+        tOrtwo:
+          padding: U
+          row_net: ROW2
+  mirror:
+    ref: matrix_mcone_mrone
+    distance: 300
+outlines:
+  board_left:
+    - what: polygon
+      operation: stack
+      points:
+      - ref: lower_lcone_lrone
+        shift: [-0.5U-2,-0.5U-2]
+      - ref: matrix_mcone_mrfour
+        shift: [-0.5U-2,0.5U+2]
+      - ref: matrix_mcfour_mrfour
+        shift: [-0.5U-2,0.5U+2]
+      - ref: matrix_mcfour_mrfour
+        shift: [0.5U+2,0.5U+2]
+      - ref: matrix_mcsix_mrfour
+        shift: [0.5U+2,0.5U+2]
+      - ref: inner_icone_irthree
+        shift: [5, 0.5U+2]
+      - ref: inner_icone_irthree
+        shift: [1.1U, 0.5U+2]
+      - ref: inner_icone_irthree
+        shift: [1.5U+3, 0.3U]
+      - ref: inner_icone_irthree
+        shift: [1.5U+3, -3.6U]
+      - ref: thumbOuter_tOcone_tOrone
+        shift: [0.5U+2, -0.5U-2]
+      - ref: lower_lcone_lrone
+        shift: [4U+5.5,-0.5U-2]
+      fillet: 3
+  baseplate_left:
+    - what: outline
+      name: board_left
+    - what: rectangle
+      operation: subtract
+      where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
+      size: [14.5, 14]
+    - what: rectangle
+      operation: subtract
+      where: thumb_tctwo_trone
+      size: [1.8U,U-6.5]
+  topplate_left:
+    - what: outline
+      name: board_left
+    - what: rectangle
+      operation: subtract
+      where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
+      size: [U-1.5, U-1.5]
+    - what: rectangle
+      operation: subtract
+      where: thumb_tctwo_trone
+      size: [1.9u,0.9u]
+  board_right:
+    - what: polygon
+      operation: stack
+      points:
+      - ref: mirror_lower_lcone_lrone
+        shift: [-0.5U-2,-0.5U-2]
+      - ref: mirror_matrix_mcone_mrfour
+        shift: [-0.5U-2,0.5U+2]
+      - ref: mirror_matrix_mcfour_mrfour
+        shift: [-0.5U-2,0.5U+2]
+      - ref: mirror_matrix_mcfour_mrfour
+        shift: [0.5U+2,0.5U+2]
+      - ref: mirror_matrix_mcsix_mrfour
+        shift: [0.5U+2,0.5U+2]
+      - ref: mirror_inner_icone_irthree
+        shift: [5, 0.5U+2]
+      - ref: mirror_inner_icone_irthree
+        shift: [1.1U, 0.5U+2]
+      - ref: mirror_inner_icone_irthree
+        shift: [1.5U+3, 0.3U]
+      - ref: mirror_inner_icone_irthree
+        shift: [1.5U+3, -3.6U]
+      - ref: mirror_thumbOuter_tOcone_tOrone
+        shift: [0.5U+2, -0.5U-2]
+      - ref: mirror_lower_lcone_lrone
+        shift: [4U+5.5,-0.5U-2]
+      fillet: 3
+  baseplate_right:
+    - what: outline
+      name: board_right
+    - what: rectangle
+      operation: subtract
+      where: /^mirror_.*/
+      size: [14.5, 14]
+    - what: rectangle
+      operation: subtract
+      where: mirror_thumb_tctwo_trone
+      size: [1.8U,U-6.5]
+  topplate_right:
+    - what: outline
+      name: board_right
+    - what: rectangle
+      operation: subtract
+      where: /^mirror_.*/
+      size: [U-1.5, U-1.5]
+    - what: rectangle
+      operation: subtract
+      where: mirror_thumb_tctwo_trone
+      size: [1.9u,0.9u]
+pcbs:
+  slimdash_left:
+    outlines:
+      main:
+        outline: board_left
+    footprints:
+      choc_hotswap:
+        what: choc
+        where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
+        params:
+          keycaps: true
+          reverse: false
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+        adjust:
+          rotate: 180
+      diode:
+        what: diode
+        where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [8,-3]
+          rotate: 90
+  slimdash_right:
+    outlines:
+      main:
+        outline: board_right
+    footprints:
+      choc_hotswap:
+        what: choc
+        where: /^mirror_.*/
+        params:
+          keycaps: true
+          reverse: false
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+        adjust:
+          rotate: 180
+      diode:
+        what: diode
+        where: /^mirror_.*/
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [-8,-3]
+          rotate: 270
