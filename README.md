@@ -4,6 +4,9 @@ ErgoDash inspired low-profile key switch keyboard with embedded RP2040
 
 ## Still in development
 
+Below are my personal memos of what needs to get done or what
+is needed for design decisions.
+
 ### TODOs
 
 * ergogen (part 1) → DONE
@@ -29,6 +32,47 @@ ErgoDash inspired low-profile key switch keyboard with embedded RP2040
     * throughhole mounted parts (TRRS Jack, type C and tactile switch for reset
       and boot)
   * adjust outer dimensions to
+* QMK configuration
+  * Make the `info.json`, `config.h` and `rules.mk`
+    * First make the info.json
+    * add what ever is not configurable on info.json using config.h and rules.mk
+      using the function manuals
+    * Following Needs configuration
+      * Key MATRIX
+      * Hardware config (processor, bootloader type etc.)
+      * Firmware config
+      * USB
+      * Layouts
+      * Features
+        * Split Keyboard
+        * RGB Matrix (if I decide to add them)
+        * bootmagic: false?
+        * mousekey: true
+        * extrakey: true
+        * nkro: true
+        * command: false
+        * console: false
+
+#### Outstanding design choices (Hardware Design)
+
+Below are some desing choices that need deciding.
+
+* TRRS Wiring for Split key and how this should be configured
+  * Handedness should be detectable using USB Host detection
+    * use `#define MASTER_LEFT` in config.h -> how to do this on info.json?
+  * Using PIO
+    * for RP2040, PIO can be used on any pin.
+    * Full Duplex? or Half Duplex?
+    * For Full Duplex, TX and RX needs to be swapped on left and right PCB.
+      * Should I mess with footprints to cross wire TRRS on left and right on the
+        reversible design of the PCB?
+      * A: apparently not.  Needs PCB side flipping.
+        * Probably better making my own reversible/crosswire TRRS footprint.
+    * Pull up resistors? when it is/isn't needed?
+      * HALF Duplex uses open drain and require pull up resistors, but FULL Duplex
+        doesn't.
+      * RP2040 PIO can run HALF duplex with internal pull ups? and is not required.
+* RGB MATRIX wiring and how this should be configured
 
 ## Acknowlegements
 
