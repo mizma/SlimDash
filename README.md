@@ -18,7 +18,7 @@ is needed for design decisions.
   * adjust footprints and part BOM
     * smt diode needs to be matched for proper size BOM
   * Import the schematic from ergoSHIFT rev2
-    * consider adding surge protect to USB using C15879
+    * consider adding surge protect to USB using C15879 or C283483
       * D+, D- and VBUS merits from protection.
   * Place parts
 * ergogen
