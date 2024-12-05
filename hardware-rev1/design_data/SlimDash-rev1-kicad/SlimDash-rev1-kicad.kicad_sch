@@ -1,5 +1,7488 @@
-(kicad_sch (version 20231120) (generator "eeschema") (generator_version "8.0")
-  (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "d2049868-8659-40e1-9f69-d91a53267064")
+	(paper "A3")
+	(lib_symbols
+		(symbol "Device:D"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 266.7 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03e7acc4-0734-4bcc-9520-b99ecbe8eb24")
+	)
+	(junction
+		(at 323.85 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "049d2f8d-8291-45d7-9031-f7a430864c52")
+	)
+	(junction
+		(at 317.5 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07453f5c-bae9-49fe-a6cf-ecfc96e6b31f")
+	)
+	(junction
+		(at 241.3 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0e7be22c-9569-4ae7-83fe-79844ca97cc4")
+	)
+	(junction
+		(at 317.5 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "10143f0d-d1d1-4790-8c08-5f59ebcfb799")
+	)
+	(junction
+		(at 247.65 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "109fe48e-b46f-4b0b-a3dd-014ec2f0308f")
+	)
+	(junction
+		(at 298.45 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "226b7e04-ba36-4ed6-989b-79424ca3784c")
+	)
+	(junction
+		(at 317.5 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27820556-7201-4f8f-9983-d10cbcd38fa2")
+	)
+	(junction
+		(at 228.6 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c992a66-2a3d-4c2e-aed4-6613ecb81380")
+	)
+	(junction
+		(at 298.45 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2d558371-e4f3-4f38-80a4-2d871de3130b")
+	)
+	(junction
+		(at 247.65 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3824a23a-5d28-4df2-a64c-a133e8ab7c5a")
+	)
+	(junction
+		(at 304.8 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3fa7309d-936c-4b53-a2e6-ed8fd7d7bb3f")
+	)
+	(junction
+		(at 323.85 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b84080a-1dea-4814-8e1e-97e59727af0b")
+	)
+	(junction
+		(at 323.85 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51c48840-2009-40f9-80be-f28b7daa6e7d")
+	)
+	(junction
+		(at 260.35 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57192eb4-a816-4448-9943-e4614bfd1954")
+	)
+	(junction
+		(at 279.4 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b4346b3-b2fa-4a90-add3-86d4bf3031d6")
+	)
+	(junction
+		(at 228.6 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5cfe6627-8992-4123-a72b-2e92d9821303")
+	)
+	(junction
+		(at 241.3 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5fe59d8b-605c-4dab-a9d9-40ea49152956")
+	)
+	(junction
+		(at 298.45 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ab9cc0d-6de4-46ff-a3bc-65aa55aaf8e9")
+	)
+	(junction
+		(at 279.4 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d15dda5-db78-4fc8-b7f8-3ca352782508")
+	)
+	(junction
+		(at 336.55 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "727c6e93-1b82-43aa-959f-1d98f18bc3c9")
+	)
+	(junction
+		(at 266.7 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7352008e-dd69-4924-905d-88cf0c662219")
+	)
+	(junction
+		(at 304.8 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78ad88d5-952a-4934-8a7c-86006538a1cb")
+	)
+	(junction
+		(at 279.4 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "805c0e52-9ea0-4282-9990-a6143cf8ecde")
+	)
+	(junction
+		(at 285.75 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "81d73cda-6d5f-470e-b69a-16bcf1804f40")
+	)
+	(junction
+		(at 336.55 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "825fc412-5c8a-43b9-b246-dfa11af7c37a")
+	)
+	(junction
+		(at 336.55 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84aae8b0-250c-4ae1-bd09-29cae894d1d0")
+	)
+	(junction
+		(at 317.5 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86b8ebfd-b0cb-4aeb-a6ea-0ee1e8155145")
+	)
+	(junction
+		(at 260.35 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8bd8f0ea-3d8d-4f70-a6d6-dec3c63d45a2")
+	)
+	(junction
+		(at 228.6 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91009fa2-0a53-467f-b2f1-6f965a904ac9")
+	)
+	(junction
+		(at 285.75 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "912549d6-e894-44ba-a8c3-94ddc4b5b1c0")
+	)
+	(junction
+		(at 323.85 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c055f14-78ee-48ca-b9c1-6ef3c9f6f31b")
+	)
+	(junction
+		(at 342.9 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a9a07de2-95c6-4796-a415-bb1ce342ded1")
+	)
+	(junction
+		(at 228.6 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad3234b6-bfc6-467b-b14f-56ba22f9c454")
+	)
+	(junction
+		(at 279.4 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae151665-6010-42dd-9736-ec2365ea22ef")
+	)
+	(junction
+		(at 266.7 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af99d484-2dd4-4f95-8689-282f108c7caf")
+	)
+	(junction
+		(at 298.45 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4ec88b7-0088-4213-878a-518ff097a337")
+	)
+	(junction
+		(at 241.3 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bd95d113-fe43-4748-86e3-798697091d1b")
+	)
+	(junction
+		(at 285.75 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be7eaf1f-6ac1-4f57-95d4-c3a2847fd7d5")
+	)
+	(junction
+		(at 241.3 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3a3a9f2-69aa-4c49-83c9-a2f9f8549bb6")
+	)
+	(junction
+		(at 336.55 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c61e916f-ecfb-4b45-8829-483f907e2d2d")
+	)
+	(junction
+		(at 317.5 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca57bd08-df68-4d2f-a53b-c6b1076f7566")
+	)
+	(junction
+		(at 304.8 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cca518c9-e32c-45c3-a4d2-e7ea197e7d52")
+	)
+	(junction
+		(at 298.45 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cfe5041b-e3ea-4761-a60e-5a9161319a98")
+	)
+	(junction
+		(at 247.65 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5af49d9-395a-457c-a00f-2d0e9637d2d9")
+	)
+	(junction
+		(at 241.3 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d8cdb49b-8bf7-44c9-9f2f-eeb79f3ea235")
+	)
+	(junction
+		(at 336.55 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d90dadc5-c033-467b-83d0-891378aa44a7")
+	)
+	(junction
+		(at 260.35 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9a305c1-ab18-45e2-bc1b-8eefa82481c7")
+	)
+	(junction
+		(at 342.9 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ddea7284-4e1d-4829-9e75-8ad0c7ef99cc")
+	)
+	(junction
+		(at 266.7 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ded1fd4e-09ed-4ab8-82ba-2064d9fbf3c1")
+	)
+	(junction
+		(at 260.35 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0217627-52bd-4781-a5e8-dd0bed78cf67")
+	)
+	(junction
+		(at 342.9 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e168fa58-0652-450f-adc8-4d7916a828f5")
+	)
+	(junction
+		(at 247.65 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1f17ed2-b9b1-42f5-9080-5f55bb713a8f")
+	)
+	(junction
+		(at 279.4 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef7e1524-060d-4479-b6e6-84bcf708a2a4")
+	)
+	(junction
+		(at 342.9 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef9056de-7d9e-492d-a00f-ff4f422ba49a")
+	)
+	(junction
+		(at 304.8 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4b3e8d0-e3b1-46e2-8824-f87cb1d61f95")
+	)
+	(junction
+		(at 260.35 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f70384e6-dfc6-418a-b302-4c2a2e915ac0")
+	)
+	(junction
+		(at 285.75 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fdb4f589-a81e-4643-a371-14bddeac0d2a")
+	)
+	(wire
+		(pts
+			(xy 342.9 50.8) (xy 342.9 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05ad83f2-a137-4912-aa07-0d2334c39e99")
+	)
+	(wire
+		(pts
+			(xy 314.96 107.95) (xy 317.5 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0724df9d-05a3-4c4f-bc1c-653e09f47c46")
+	)
+	(wire
+		(pts
+			(xy 342.9 88.9) (xy 342.9 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07a23dcb-c00f-4281-b316-d6217d5e0a6e")
+	)
+	(wire
+		(pts
+			(xy 295.91 69.85) (xy 298.45 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08b6d3e5-bbf5-4859-8ce1-fd5d02855391")
+	)
+	(wire
+		(pts
+			(xy 334.01 50.8) (xy 336.55 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f7d51a9-d9a7-4d0d-8ee0-c8b9c971d526")
+	)
+	(wire
+		(pts
+			(xy 215.9 134.62) (xy 241.3 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1218ad38-8cbd-4186-b615-d78fc748d9f7")
+	)
+	(wire
+		(pts
+			(xy 342.9 38.1) (xy 342.9 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1418c441-7a20-4110-9a12-f1fab4e1dfee")
+	)
+	(wire
+		(pts
+			(xy 266.7 107.95) (xy 266.7 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16f71686-52b5-4baf-b976-875b6a828831")
+	)
+	(wire
+		(pts
+			(xy 285.75 107.95) (xy 285.75 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1abbf406-626f-429a-9e7c-f8967e514501")
+	)
+	(wire
+		(pts
+			(xy 298.45 115.57) (xy 317.5 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ac3f052-a4a6-4606-8d7a-248d5a38189d")
+	)
+	(wire
+		(pts
+			(xy 336.55 115.57) (xy 355.6 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c586439-3bb4-4d3f-a62b-dd1498cd9777")
+	)
+	(wire
+		(pts
+			(xy 304.8 50.8) (xy 304.8 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f420f59-963f-4aa3-a308-ae3ddb205444")
+	)
+	(wire
+		(pts
+			(xy 276.86 50.8) (xy 279.4 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2328813e-b3f3-4d16-ada0-2be329f2f8d3")
+	)
+	(wire
+		(pts
+			(xy 238.76 127) (xy 241.3 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23f6acf4-63b0-48d3-9fc3-0c947334b220")
+	)
+	(wire
+		(pts
+			(xy 276.86 88.9) (xy 279.4 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2638d3aa-2f48-489e-a9af-c53040d27b8b")
+	)
+	(wire
+		(pts
+			(xy 241.3 58.42) (xy 260.35 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "267a9eb8-1cae-4063-bccb-8de93ece07fc")
+	)
+	(wire
+		(pts
+			(xy 353.06 50.8) (xy 355.6 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27f841c8-645d-410d-8603-7d9a6adadb09")
+	)
+	(wire
+		(pts
+			(xy 266.7 38.1) (xy 266.7 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28c026a9-1e0d-47eb-93ad-7b84ee9714ce")
+	)
+	(wire
+		(pts
+			(xy 228.6 88.9) (xy 228.6 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28ec4049-5087-4555-a00d-6ee09a4be4c2")
+	)
+	(wire
+		(pts
+			(xy 323.85 69.85) (xy 323.85 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29c75ecf-fdbf-431c-beb8-14bae9062f94")
+	)
+	(wire
+		(pts
+			(xy 323.85 50.8) (xy 323.85 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ce45681-9fd1-4cac-9ab9-4b5353cca395")
+	)
+	(wire
+		(pts
+			(xy 317.5 77.47) (xy 336.55 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34bf16ae-41b3-46ae-837a-cc001da408ea")
+	)
+	(wire
+		(pts
+			(xy 317.5 134.62) (xy 336.55 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "390e7f97-c495-4ecb-93c0-f67d4c727c3f")
+	)
+	(wire
+		(pts
+			(xy 334.01 127) (xy 336.55 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39ba4701-89f3-431a-98ad-e51c59cdb0af")
+	)
+	(wire
+		(pts
+			(xy 353.06 88.9) (xy 355.6 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bfc4442-1d8b-4635-8939-7cbd407d1062")
+	)
+	(wire
+		(pts
+			(xy 276.86 107.95) (xy 279.4 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d7fac12-1643-4cb0-b4eb-7c87515232fe")
+	)
+	(wire
+		(pts
+			(xy 285.75 38.1) (xy 285.75 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ddc6bd2-4ee9-4012-819f-8dd00723fd6b")
+	)
+	(wire
+		(pts
+			(xy 314.96 88.9) (xy 317.5 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4053bafa-c937-40c2-9027-590e5ff1667c")
+	)
+	(wire
+		(pts
+			(xy 314.96 127) (xy 317.5 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44a9dba2-6ee6-4c4a-bb11-53453706de11")
+	)
+	(wire
+		(pts
+			(xy 295.91 127) (xy 298.45 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "455e0228-970c-4b2f-9c5a-b6f0535a2c24")
+	)
+	(wire
+		(pts
+			(xy 247.65 50.8) (xy 247.65 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4825271c-19cc-471b-9d1a-b92a3e2f4eff")
+	)
+	(wire
+		(pts
+			(xy 298.45 77.47) (xy 317.5 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4835688c-cfc3-4737-84a4-c146361c41c5")
+	)
+	(wire
+		(pts
+			(xy 257.81 69.85) (xy 260.35 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48e05c85-f7fe-4718-b71d-125c79dd14db")
+	)
+	(wire
+		(pts
+			(xy 323.85 88.9) (xy 323.85 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "499f7bc0-be09-4cdc-bbcc-17306879053e")
+	)
+	(wire
+		(pts
+			(xy 323.85 38.1) (xy 323.85 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ada55b5-6019-4c5f-b771-17156d5b2b45")
+	)
+	(wire
+		(pts
+			(xy 334.01 88.9) (xy 336.55 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c8dae5a-4656-41e5-857d-882213a3446c")
+	)
+	(wire
+		(pts
+			(xy 238.76 50.8) (xy 241.3 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d99ee58-b680-4de2-b517-cb3b30d1592e")
+	)
+	(wire
+		(pts
+			(xy 247.65 107.95) (xy 247.65 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ea288e5-2c93-44ff-9106-252e163886d2")
+	)
+	(wire
+		(pts
+			(xy 257.81 88.9) (xy 260.35 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5000a141-a80f-417a-b318-17b114bd7829")
+	)
+	(wire
+		(pts
+			(xy 295.91 50.8) (xy 298.45 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51aac111-c99d-4365-b890-2eb0268d5a13")
+	)
+	(wire
+		(pts
+			(xy 238.76 107.95) (xy 241.3 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55fa1ae1-1833-4248-ae45-ddeddf4ddf13")
+	)
+	(wire
+		(pts
+			(xy 241.3 77.47) (xy 260.35 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56d9882c-fe6a-4e29-87c0-71b3f894af74")
+	)
+	(wire
+		(pts
+			(xy 228.6 69.85) (xy 228.6 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59e7ea55-a7c1-443e-a6e8-6c894e113e56")
+	)
+	(wire
+		(pts
+			(xy 285.75 88.9) (xy 285.75 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c3109ce-c3ea-4227-88d7-cc05eff0a6b9")
+	)
+	(wire
+		(pts
+			(xy 215.9 96.52) (xy 241.3 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ced345c-b564-4f07-a1d5-aa5245c2bbf1")
+	)
+	(wire
+		(pts
+			(xy 228.6 50.8) (xy 228.6 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5da184dd-75de-4570-9309-7cd57194d97a")
+	)
+	(wire
+		(pts
+			(xy 238.76 88.9) (xy 241.3 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5da62222-1376-48e2-8a22-93050185dddf")
+	)
+	(wire
+		(pts
+			(xy 323.85 107.95) (xy 323.85 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "607d3f8c-d2fc-4482-8d5b-405ef121568c")
+	)
+	(wire
+		(pts
+			(xy 317.5 58.42) (xy 336.55 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "649399ef-4b51-45b2-ac26-da3432a95670")
+	)
+	(wire
+		(pts
+			(xy 317.5 96.52) (xy 336.55 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "671b4368-d8fa-496c-a1d5-a75d1df81927")
+	)
+	(wire
+		(pts
+			(xy 215.9 115.57) (xy 241.3 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6757e859-db92-41b3-8651-a393623c94d6")
+	)
+	(wire
+		(pts
+			(xy 257.81 127) (xy 260.35 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6901fe2f-065a-4803-8730-c87b094d8a06")
+	)
+	(wire
+		(pts
+			(xy 266.7 88.9) (xy 266.7 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c7b796e-75cf-4efe-8d39-dee4d5c0ef19")
+	)
+	(wire
+		(pts
+			(xy 279.4 77.47) (xy 298.45 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "771fc84c-01b2-4212-aaba-ddab49933c10")
+	)
+	(wire
+		(pts
+			(xy 279.4 115.57) (xy 298.45 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78894260-63c5-4dd1-b2aa-13ed4dfc72ac")
+	)
+	(wire
+		(pts
+			(xy 336.55 134.62) (xy 355.6 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7966a63d-d54e-413f-8369-fc30bf76b0f9")
+	)
+	(wire
+		(pts
+			(xy 260.35 115.57) (xy 279.4 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f2cc595-1690-47e2-83b1-72deff47575d")
+	)
+	(wire
+		(pts
+			(xy 304.8 107.95) (xy 304.8 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fb38469-73e5-47c2-96ce-f423773f58bf")
+	)
+	(wire
+		(pts
+			(xy 266.7 50.8) (xy 266.7 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "801a8c44-b304-4955-8240-aadb154a1564")
+	)
+	(wire
+		(pts
+			(xy 342.9 107.95) (xy 342.9 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8630b28b-fb1e-4def-ba04-f33d239978b0")
+	)
+	(wire
+		(pts
+			(xy 336.55 58.42) (xy 355.6 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8663954f-29e6-4f6f-abbc-9d755e0f34a5")
+	)
+	(wire
+		(pts
+			(xy 215.9 77.47) (xy 241.3 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86e2a8df-834f-4623-a145-c39876f0c587")
+	)
+	(wire
+		(pts
+			(xy 317.5 115.57) (xy 336.55 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8aac9339-3ffd-4aee-a3d8-64e3279d3e7c")
+	)
+	(wire
+		(pts
+			(xy 304.8 38.1) (xy 304.8 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b3b372d-55ea-4fee-8c8e-2b5f3be57a5b")
+	)
+	(wire
+		(pts
+			(xy 276.86 69.85) (xy 279.4 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "910ddde1-c752-4084-b955-8de5b7c267d8")
+	)
+	(wire
+		(pts
+			(xy 353.06 69.85) (xy 355.6 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92817d21-d2a9-4e38-a13d-4c9aae421ef3")
+	)
+	(wire
+		(pts
+			(xy 279.4 96.52) (xy 298.45 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "945ffb02-ce0e-4484-ad35-4858df858628")
+	)
+	(wire
+		(pts
+			(xy 279.4 58.42) (xy 298.45 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9613c390-0279-44c0-a9c8-a9bbf1c319ac")
+	)
+	(wire
+		(pts
+			(xy 342.9 69.85) (xy 342.9 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "962ae739-b91c-4672-983e-e277145f7b3b")
+	)
+	(wire
+		(pts
+			(xy 304.8 88.9) (xy 304.8 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9652d93c-d89c-4100-8aa2-be4aab83a440")
+	)
+	(wire
+		(pts
+			(xy 279.4 134.62) (xy 298.45 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99b8f518-cbcb-4141-95cc-5c9d383ed16b")
+	)
+	(wire
+		(pts
+			(xy 241.3 115.57) (xy 260.35 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a131c567-9a0e-487c-8fca-5317c352ac3f")
+	)
+	(wire
+		(pts
+			(xy 298.45 58.42) (xy 317.5 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1aada34-ff3d-42f3-a6c4-6f13b18af45c")
+	)
+	(wire
+		(pts
+			(xy 334.01 107.95) (xy 336.55 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2d1f8e2-2c94-40db-a45a-e19a0c3d6761")
+	)
+	(wire
+		(pts
+			(xy 247.65 38.1) (xy 247.65 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a52175d5-f3bf-4741-9531-86e2c7fa3177")
+	)
+	(wire
+		(pts
+			(xy 314.96 50.8) (xy 317.5 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab3a0c89-9ccf-4e64-96c3-0137b422fce1")
+	)
+	(wire
+		(pts
+			(xy 266.7 69.85) (xy 266.7 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab5dc46c-38b7-4372-81a8-f0fa879ee049")
+	)
+	(wire
+		(pts
+			(xy 247.65 69.85) (xy 247.65 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac68a69b-93ca-4ef1-a593-27e5f8a79449")
+	)
+	(wire
+		(pts
+			(xy 298.45 134.62) (xy 317.5 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b67a48b9-0aaf-4368-848e-d4a04b053678")
+	)
+	(wire
+		(pts
+			(xy 336.55 96.52) (xy 355.6 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b71dffef-f0db-477f-86a1-70ae863a8b91")
+	)
+	(wire
+		(pts
+			(xy 241.3 134.62) (xy 260.35 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbdb1cab-2852-4fcb-9d96-f533fff801d2")
+	)
+	(wire
+		(pts
+			(xy 257.81 50.8) (xy 260.35 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beeb0362-b2b5-4466-a65c-347726934e06")
+	)
+	(wire
+		(pts
+			(xy 241.3 96.52) (xy 260.35 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c05c2568-afd1-4df9-9a41-5c934f919daf")
+	)
+	(wire
+		(pts
+			(xy 295.91 88.9) (xy 298.45 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c47ffc1d-f8af-4114-83db-d68f64696d11")
+	)
+	(wire
+		(pts
+			(xy 314.96 69.85) (xy 317.5 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c72fce8b-3129-4686-9a42-b6e4f92bbd70")
+	)
+	(wire
+		(pts
+			(xy 247.65 88.9) (xy 247.65 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c97374d5-92b2-4a5c-975d-15585a401dac")
+	)
+	(wire
+		(pts
+			(xy 260.35 58.42) (xy 279.4 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb497cfd-85b5-4306-a0ad-7b07ba606086")
+	)
+	(wire
+		(pts
+			(xy 228.6 107.95) (xy 228.6 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d099cc7c-7844-41e2-9ad9-068ad96679d1")
+	)
+	(wire
+		(pts
+			(xy 260.35 96.52) (xy 279.4 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0b1452e-951a-4f5b-b7a6-0e352278b465")
+	)
+	(wire
+		(pts
+			(xy 257.81 107.95) (xy 260.35 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0bc8db9-20f8-447a-8240-e388d5404dd9")
+	)
+	(wire
+		(pts
+			(xy 298.45 96.52) (xy 317.5 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5ab6d2f-3784-429b-add4-9253b60ab7c1")
+	)
+	(wire
+		(pts
+			(xy 336.55 77.47) (xy 355.6 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d660c65a-d948-4694-beda-67c20a4b223c")
+	)
+	(wire
+		(pts
+			(xy 215.9 58.42) (xy 241.3 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8779921-55da-456e-a809-58de7560e196")
+	)
+	(wire
+		(pts
+			(xy 285.75 50.8) (xy 285.75 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dceac7f6-793f-4045-8717-5f8281cabeb1")
+	)
+	(wire
+		(pts
+			(xy 304.8 69.85) (xy 304.8 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddf04c45-c359-4654-8d92-3ba3a4d8b01d")
+	)
+	(wire
+		(pts
+			(xy 276.86 127) (xy 279.4 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0581393-97cc-4e2c-b1a9-2749a2591bf5")
+	)
+	(wire
+		(pts
+			(xy 228.6 38.1) (xy 228.6 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7205417-ec15-426a-a4c5-336ab71e55ab")
+	)
+	(wire
+		(pts
+			(xy 353.06 107.95) (xy 355.6 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7f21e2a-c9f9-460e-b691-6d63458341de")
+	)
+	(wire
+		(pts
+			(xy 353.06 127) (xy 355.6 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e98e3e02-abf7-4b4d-81b9-e376dbcf6734")
+	)
+	(wire
+		(pts
+			(xy 285.75 69.85) (xy 285.75 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb2166aa-e508-402e-adb1-a716e76e06a0")
+	)
+	(wire
+		(pts
+			(xy 334.01 69.85) (xy 336.55 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7ce2548-44cd-4ff5-b42a-733da1549e4d")
+	)
+	(wire
+		(pts
+			(xy 238.76 69.85) (xy 241.3 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa7204e3-8cf6-4ba9-9272-31a70f5393f6")
+	)
+	(wire
+		(pts
+			(xy 260.35 134.62) (xy 279.4 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe9078db-a9c6-4823-a918-eee32cd7d429")
+	)
+	(wire
+		(pts
+			(xy 295.91 107.95) (xy 298.45 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff1dca75-3ecf-4139-bca4-986eb3c8ac80")
+	)
+	(wire
+		(pts
+			(xy 260.35 77.47) (xy 279.4 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff4d34a9-163b-4b87-9266-ae1a597bc247")
+	)
+	(rectangle
+		(start 16.51 16.51)
+		(end 177.8 201.93)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 0316e852-d718-4937-9e44-41cc8c787618)
+	)
+	(rectangle
+		(start 181.61 16.51)
+		(end 381 146.05)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 5ec33775-83a6-43e3-85fd-e361c5d26170)
+	)
+	(text "Controller Circuit"
+		(exclude_from_sim no)
+		(at 26.416 19.304 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "30c84c00-3634-46de-a69d-ffad3cf4e68d")
+	)
+	(text "Key Matrix"
+		(exclude_from_sim no)
+		(at 188.214 19.304 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "abcbb1a4-8ca6-4e8c-8574-9f3337ef8eed")
+	)
+	(global_label "COL1"
+		(shape bidirectional)
+		(at 228.6 38.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0d6c6222-75e2-4075-947b-d24885106c7d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 228.6 29.1654 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW4"
+		(shape bidirectional)
+		(at 215.9 77.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4f772bf5-81e9-40f2-9ca9-55ef170f57ea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 206.5421 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL4"
+		(shape bidirectional)
+		(at 285.75 38.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7ca73140-55ed-4b98-8779-88698b647e16")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 285.75 29.1654 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL7"
+		(shape bidirectional)
+		(at 342.9 38.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7fffebf8-cfbf-479b-8b04-ab74314d7dff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 342.9 29.1654 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW5"
+		(shape bidirectional)
+		(at 215.9 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "829d363f-0230-4115-b45d-ea28b99a6af9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 206.5421 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL2"
+		(shape bidirectional)
+		(at 247.65 38.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "83763950-5810-4fdd-85b3-95f4d9f83680")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 247.65 29.1654 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW3"
+		(shape bidirectional)
+		(at 215.9 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9c44f309-c7a9-4ae9-b0d8-cba104a9ab47")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 206.5421 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL6"
+		(shape bidirectional)
+		(at 323.85 38.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b24361db-e6f3-48dc-8db3-46ed1db21862")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 323.85 29.1654 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW2"
+		(shape bidirectional)
+		(at 215.9 115.57 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bdd3da38-77d7-4985-9892-65fbe059fb22")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 206.5421 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL5"
+		(shape bidirectional)
+		(at 304.8 38.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d592d9c9-2b0e-4cdc-8f9b-8a008da8c777")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 304.8 29.1654 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW1"
+		(shape bidirectional)
+		(at 215.9 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "efe6917d-f932-4740-8bf2-8a60d14de11b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 206.5421 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL3"
+		(shape bidirectional)
+		(at 266.7 38.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f03cdf59-3818-4c1b-b6e5-579eff0a96fb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 266.7 29.1654 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 336.55 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06f67eca-9183-4dda-bdb3-bfe24fdd5ebe")
+		(property "Reference" "D21"
+			(at 339.09 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 339.09 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 336.55 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 336.55 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 336.55 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 336.55 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 336.55 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "674eed21-69eb-4a84-8313-9cb553f3c281")
+		)
+		(pin "1"
+			(uuid "84db7639-b4cb-4a61-a176-f90a0bd0daf7")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 355.6 92.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0b5d0260-275c-4270-b684-11874aaa38cf")
+		(property "Reference" "D25"
+			(at 358.14 91.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 358.14 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 355.6 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 355.6 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 355.6 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 355.6 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 355.6 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dc1e1044-5008-40e8-83d2-ab364c7262b7")
+		)
+		(pin "1"
+			(uuid "8bdf22d0-b653-4e50-aee8-fb27daf9df1f")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 347.98 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0beda68c-b123-4ec0-9a99-b17419a680d1")
+		(property "Reference" "S26"
+			(at 347.98 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 347.98 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 347.98 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 347.98 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 347.98 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e1f75cfa-d58d-44b8-a900-7ea4483162fd")
+		)
+		(pin "1"
+			(uuid "1b5e1724-09e5-43c6-aabd-9ced46035485")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 328.93 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f0332d6-346f-446d-a7d2-291416a78b26")
+		(property "Reference" "S22"
+			(at 328.93 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 328.93 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 328.93 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 328.93 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 328.93 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cfbf29cc-5322-44ca-abf7-ae53fe8eede8")
+		)
+		(pin "1"
+			(uuid "29ca431b-2bd9-47ff-b076-7fd51e849f93")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 336.55 130.81 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1780f362-df5c-427e-98a5-a5bbdf1fdd60")
+		(property "Reference" "D33"
+			(at 339.09 129.5399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 339.09 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 336.55 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 336.55 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 336.55 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 336.55 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 336.55 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9d71563b-c6a2-4fa9-a171-722090d9cb12")
+		)
+		(pin "1"
+			(uuid "1b6e37fc-0c2e-4301-90bb-4dc5992cedac")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 309.88 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b09dfa8-12e8-4f92-b5e5-6227ca7edd50")
+		(property "Reference" "S20"
+			(at 309.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 309.88 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 309.88 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 309.88 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 309.88 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "eacd9015-8b17-45be-a962-0a900fea0596")
+		)
+		(pin "1"
+			(uuid "01a6b884-2c8f-4a0f-b586-70290566281f")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 241.3 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1fd3fd89-cc6b-4b18-bb35-5cc288ffafac")
+		(property "Reference" "D4"
+			(at 243.84 53.3399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 243.84 55.8799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.3 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 241.3 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 241.3 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 241.3 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ce0d5c5b-2161-47ed-b7ce-70ea042a65f2")
+		)
+		(pin "1"
+			(uuid "c6d0210a-450b-4bd7-ad50-25faf2778452")
+		)
+		(instances
+			(project ""
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 336.55 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24cf3efc-c5f9-457f-aa74-32e50b16bc7f")
+		(property "Reference" "D23"
+			(at 339.09 72.3899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 339.09 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 336.55 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 336.55 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 336.55 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 336.55 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 336.55 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "659e8e1e-99ed-4889-b478-7f478f8cfb7d")
+		)
+		(pin "1"
+			(uuid "339d3f44-93d5-4da7-bb38-d95ba3ba6530")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 241.3 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c1f1fb7-a556-4a03-b3d3-f43e19ca5522")
+		(property "Reference" "D1"
+			(at 243.84 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 243.84 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.3 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 241.3 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 241.3 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 241.3 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0b1ccde2-9cc9-4c34-9a3f-4760195d455c")
+		)
+		(pin "1"
+			(uuid "b5da58d5-d0b8-400a-a1a8-af4658d68bc4")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 233.68 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c91adf5-6be4-4fa5-864c-8ec703a35d8f")
+		(property "Reference" "S3"
+			(at 233.68 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 233.68 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7269af5f-a6ce-4026-acec-2c1e0cbf18d1")
+		)
+		(pin "1"
+			(uuid "9166a7e8-fdf9-4b50-9e65-6d2c32656c9f")
+		)
+		(instances
+			(project ""
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 298.45 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2dea53ee-cfba-4f9f-8544-a7469e2db1eb")
+		(property "Reference" "D13"
+			(at 300.99 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 300.99 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 298.45 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 298.45 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 298.45 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 298.45 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 298.45 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "decb5298-41c1-43e5-b954-ba6e41a6de01")
+		)
+		(pin "1"
+			(uuid "e79190d7-e463-404f-b0e9-32211f7b42db")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 328.93 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3100aebe-53d4-4e69-918e-2c8f8b6a5b87")
+		(property "Reference" "S33"
+			(at 328.93 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 328.93 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 328.93 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 328.93 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 328.93 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1cf56c67-8c0f-4fc4-a27b-b84e2012b3ea")
+		)
+		(pin "1"
+			(uuid "bcfac541-ca39-4ab6-b888-cd456b584284")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 355.6 130.81 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3111a3c0-93fb-4902-9ff6-fc0a5d41ad8a")
+		(property "Reference" "D34"
+			(at 358.14 129.5399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 358.14 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 355.6 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 355.6 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 355.6 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 355.6 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 355.6 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dff04beb-6239-4447-88f1-4980502561f8")
+		)
+		(pin "1"
+			(uuid "b486cfee-40be-4eec-a402-dae9037072b7")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 252.73 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31814061-b5ad-4bd8-8f2f-24925bdfac4e")
+		(property "Reference" "S8"
+			(at 252.73 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 252.73 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 252.73 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 252.73 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a2ca1387-ea85-4835-af22-6e0f4961d0c7")
+		)
+		(pin "1"
+			(uuid "870d8be3-ce55-4adb-9a36-a8c7cd153882")
+		)
+		(instances
+			(project ""
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 336.55 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3308b9bc-7a02-413b-8ab9-f7aab65af258")
+		(property "Reference" "D24"
+			(at 339.09 53.3399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 339.09 55.8799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 336.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 336.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 336.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 336.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 336.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "307404f3-d725-4e48-88ab-30bce4fce9b6")
+		)
+		(pin "1"
+			(uuid "de5e6e9b-e5b5-4ff3-a726-fda364ac46ce")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 260.35 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "359fe079-23ca-4a7b-9c50-0c16ab03e55b")
+		(property "Reference" "D7"
+			(at 262.89 72.3899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 262.89 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 260.35 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 260.35 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 260.35 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "12e65294-3f69-4436-aad3-2ac3961031ff")
+		)
+		(pin "1"
+			(uuid "9a0660df-a218-46e5-a351-b3b9094699dd")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 317.5 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "389aa828-0821-4e9d-9540-0773b322c0a7")
+		(property "Reference" "D17"
+			(at 320.04 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 320.04 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 317.5 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 317.5 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 317.5 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 317.5 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 317.5 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e46c62f9-2dfb-43a5-9746-bcbbdadc9ce4")
+		)
+		(pin "1"
+			(uuid "6484b90b-1613-4202-80cf-27c14598dcc0")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 252.73 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c41de20-2eff-4c3f-92ba-368434140fd2")
+		(property "Reference" "S29"
+			(at 252.73 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 252.73 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 252.73 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 252.73 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8a91a520-1bef-4cec-b7d4-b941a5b5b247")
+		)
+		(pin "1"
+			(uuid "91ec82b3-1f40-4fae-b0f2-dc403f09eba4")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 279.4 92.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3cc03c3a-3bce-4f3d-ab29-dcf0825d56d9")
+		(property "Reference" "D10"
+			(at 281.94 91.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 281.94 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 279.4 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 279.4 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 279.4 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 279.4 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 279.4 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4e29ed29-596b-4497-b47d-98fd96e44a3f")
+		)
+		(pin "1"
+			(uuid "4364b6bb-0b69-4ab5-b93f-a7825f75cef1")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 279.4 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "408e7481-9257-45c5-857e-e3beb7408b37")
+		(property "Reference" "D11"
+			(at 281.94 72.3899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 281.94 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 279.4 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 279.4 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 279.4 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 279.4 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 279.4 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "eb01a1d5-74e2-4afe-8947-f91e89056912")
+		)
+		(pin "1"
+			(uuid "6630b151-e3d4-4adf-8989-65959157fa3b")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 241.3 130.81 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44094b10-f3b1-4f02-854d-9689de3bb76c")
+		(property "Reference" "D28"
+			(at 243.84 129.5399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 243.84 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.3 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 241.3 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 241.3 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 241.3 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2a156da6-537e-4a2c-b120-b14393b97b71")
+		)
+		(pin "1"
+			(uuid "a235ac4e-7b80-493e-b085-e9b9a9980b24")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 252.73 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44f45c2f-8771-45aa-9b9a-e0aab07c845d")
+		(property "Reference" "S5"
+			(at 252.73 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 252.73 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 252.73 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 252.73 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "018e4e66-38a5-4338-822a-57d9d10c53cb")
+		)
+		(pin "1"
+			(uuid "ff78ad0d-e7ad-453e-8c1c-25b8714a8436")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 233.68 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49dbbd44-e66b-4d65-b9e6-23abd1295a7b")
+		(property "Reference" "S28"
+			(at 233.68 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 233.68 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 233.68 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 233.68 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "20ecb65a-f505-47de-9b13-ff5c9e52935b")
+		)
+		(pin "1"
+			(uuid "c5ac6f6f-c36d-481c-8595-1ff239eed71f")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 347.98 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e032097-87d4-43ed-89ad-6daad5639556")
+		(property "Reference" "S25"
+			(at 347.98 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 347.98 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 347.98 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 347.98 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 347.98 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "552c86a9-ab90-4b5d-b408-805dae7c279d")
+		)
+		(pin "1"
+			(uuid "feda8e4e-e2aa-4e0a-8401-3953b3f34c4b")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 328.93 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f00d0fb-447f-4ded-b99d-cda687acca48")
+		(property "Reference" "S21"
+			(at 328.93 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 328.93 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 328.93 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 328.93 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 328.93 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7f918c56-f549-4de4-be23-e9bbfb114eaf")
+		)
+		(pin "1"
+			(uuid "d6948b09-328d-4f9b-9115-653a8c0ff9e8")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 241.3 92.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "54ab467b-93ed-4302-bcd4-58db7f47f566")
+		(property "Reference" "D2"
+			(at 243.84 91.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 243.84 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.3 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 241.3 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 241.3 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 241.3 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1d0f458a-e497-41e3-9eff-08e9dfd3ece7")
+		)
+		(pin "1"
+			(uuid "ad2f589b-3877-4910-a3e2-6ad3c32b00ae")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 347.98 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61fd2b96-404a-4328-a639-f6e686cee746")
+		(property "Reference" "S27"
+			(at 347.98 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 347.98 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 347.98 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 347.98 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 347.98 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1b1a84be-8287-4d67-9aa9-028fa21b826b")
+		)
+		(pin "1"
+			(uuid "5cf382f9-2a7e-46a2-8ca5-cbd4d95425d7")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 328.93 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "637d0030-e444-4c74-a47a-e0365af5910e")
+		(property "Reference" "S23"
+			(at 328.93 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 328.93 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 328.93 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 328.93 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 328.93 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b41f1059-0fab-4e72-9a31-51dadc01ddf8")
+		)
+		(pin "1"
+			(uuid "eb2a0505-adb1-4c2a-af09-c8a30e488475")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 328.93 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "664658ae-8363-4e4b-9fae-48eb81cf1529")
+		(property "Reference" "S24"
+			(at 328.93 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 328.93 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 328.93 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 328.93 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 328.93 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0bed51ee-2bb0-4639-b94b-9569c5a0f40a")
+		)
+		(pin "1"
+			(uuid "6caa1cd5-26c1-4d13-9c05-071840bce58d")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 309.88 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6849e596-1687-4785-8ba8-f7622ba7df10")
+		(property "Reference" "S19"
+			(at 309.88 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 309.88 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 309.88 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 309.88 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 309.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7a91eab8-4e03-4f65-8b1c-a2928a02115e")
+		)
+		(pin "1"
+			(uuid "3e307fd2-1812-43f6-a89f-e70d93693552")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 279.4 130.81 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6de2acf1-98b3-43fd-b811-6a847903bc3b")
+		(property "Reference" "D30"
+			(at 281.94 129.5399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 281.94 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 279.4 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 279.4 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 279.4 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 279.4 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 279.4 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "83cd6323-1e21-4d57-afc3-19aee214a209")
+		)
+		(pin "1"
+			(uuid "949d2160-831c-4067-9bef-0d71f6f58ec9")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 290.83 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e23276e-5133-486c-b70e-aa5cca95223f")
+		(property "Reference" "S31"
+			(at 290.83 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 290.83 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 290.83 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 290.83 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 290.83 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1fe002a0-f676-421f-beac-275d49d2e93b")
+		)
+		(pin "1"
+			(uuid "d4a9ffcd-7431-4324-9f57-4723a123b5e8")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 260.35 130.81 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a2c550e-a682-4b58-86be-6060a1b415d2")
+		(property "Reference" "D29"
+			(at 262.89 129.5399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 262.89 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 260.35 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 260.35 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 260.35 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b4300181-1d79-45cf-add7-e4d088421da6")
+		)
+		(pin "1"
+			(uuid "351091a6-c87e-43af-9c3e-f63619492d2f")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 279.4 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7dfad727-9091-40d3-b2d8-2b2eeef82588")
+		(property "Reference" "D9"
+			(at 281.94 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 281.94 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 279.4 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 279.4 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 279.4 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 279.4 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 279.4 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d58253b6-dba7-4a08-8837-2cbb0fe96ba8")
+		)
+		(pin "1"
+			(uuid "68a0008d-a80b-4e41-ad2a-64a630576e86")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 355.6 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "80a4977b-8088-42a4-9004-5f092addf9d5")
+		(property "Reference" "D26"
+			(at 358.14 72.3899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 358.14 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 355.6 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 355.6 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 355.6 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 355.6 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 355.6 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b5b22f28-0249-465a-afa4-5cab948fa9af")
+		)
+		(pin "1"
+			(uuid "b8ddf367-552f-4609-9cba-a05439bab793")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 317.5 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "83b6fe89-5c61-4b42-9276-be00bebcc119")
+		(property "Reference" "D19"
+			(at 320.04 72.3899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 320.04 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 317.5 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 317.5 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 317.5 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 317.5 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 317.5 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f9305fce-fa8e-443a-a071-484ece6c2153")
+		)
+		(pin "1"
+			(uuid "f0d0bbbb-f562-4d57-b4fd-151fe2bfa3f9")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 252.73 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8999a2f9-96e4-4788-8e8c-7dc6823c4c68")
+		(property "Reference" "S6"
+			(at 252.73 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 252.73 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 252.73 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 252.73 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "560f486b-9d67-4672-90f1-d83a3219229c")
+		)
+		(pin "1"
+			(uuid "b25a2984-ab9a-4fb6-ba93-fc8f04181444")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 298.45 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e6ccb90-a824-48d7-9482-e2502869ba03")
+		(property "Reference" "D15"
+			(at 300.99 72.3899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 300.99 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 298.45 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 298.45 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 298.45 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 298.45 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 298.45 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9a161da0-9f23-4305-b660-d232119ca731")
+		)
+		(pin "1"
+			(uuid "b8818bce-475f-44c7-b18d-0996cfa66eec")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 271.78 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e84e57f-0a95-40f5-bd0e-1b2ce4c8c0e6")
+		(property "Reference" "S12"
+			(at 271.78 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 271.78 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 271.78 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.78 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 271.78 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b7b45729-1511-471a-8f75-1094a14ca3ab")
+		)
+		(pin "1"
+			(uuid "3230fd2a-abac-4936-aacd-434eb4a79a00")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 233.68 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "92e690fa-f36a-4e04-bf29-cfdfef4ee3e9")
+		(property "Reference" "S4"
+			(at 233.68 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 233.68 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 233.68 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 233.68 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ee7825ed-ce87-4f2d-8ab9-1528e1d3aad3")
+		)
+		(pin "1"
+			(uuid "95567bc5-4b01-4b5c-ae9a-7389c3cee917")
+		)
+		(instances
+			(project ""
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 290.83 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9427cdf3-bd6d-4279-9612-797f1aa08bab")
+		(property "Reference" "S15"
+			(at 290.83 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 290.83 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 290.83 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 290.83 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 290.83 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1e3972ab-fe0b-4984-9beb-f197958d899b")
+		)
+		(pin "1"
+			(uuid "d4511ae1-7f9a-4a41-8b7c-355e6f89d0e5")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 233.68 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94e4a400-2da4-4784-a942-4e47bf561874")
+		(property "Reference" "S1"
+			(at 233.68 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 233.68 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 233.68 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 233.68 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b7413a89-3c49-4aa9-b417-a6e70c6ea5d3")
+		)
+		(pin "2"
+			(uuid "b0abd162-54d3-4a81-aea2-8b8c9e77cead")
+		)
+		(instances
+			(project ""
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 309.88 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "950a9dd1-278e-4a80-ba3a-dba2c6399d38")
+		(property "Reference" "S17"
+			(at 309.88 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 309.88 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 309.88 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 309.88 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 309.88 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d3f4544f-c3ac-4f54-8c53-35cfb0cfdd75")
+		)
+		(pin "1"
+			(uuid "6977b41a-075a-4843-99ec-f2c4ed406b80")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 290.83 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "988b5ab7-6818-4b08-a269-29f41e8d73a4")
+		(property "Reference" "S13"
+			(at 290.83 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 290.83 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 290.83 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 290.83 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 290.83 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7461c553-bb3d-4aca-afe0-8d2ed86571e3")
+		)
+		(pin "1"
+			(uuid "49b92880-75ad-4c43-b1fe-d59da6bfefcd")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 298.45 130.81 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9fa9e441-31d0-4574-b974-09d549a6ce8c")
+		(property "Reference" "D31"
+			(at 300.99 129.5399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 300.99 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 298.45 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 298.45 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 298.45 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 298.45 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 298.45 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c5c46216-e04c-4890-bdd9-4ab55f85bbf8")
+		)
+		(pin "1"
+			(uuid "4e36d535-112c-47d1-a1bc-8f0dcae4fed4")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 271.78 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4441328-2546-41d5-a747-4384685e0a2b")
+		(property "Reference" "S11"
+			(at 271.78 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 271.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 271.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 271.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a3474eb9-0ca3-4698-b210-2d8f616e68d9")
+		)
+		(pin "1"
+			(uuid "c0d0ba02-5434-4bf1-ba0f-8bd3f2a62806")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 252.73 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a91cbcb4-7899-4ec4-99ad-ce722e047c00")
+		(property "Reference" "S7"
+			(at 252.73 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 252.73 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 252.73 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.73 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 252.73 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "af916002-f61d-4d1c-a00d-7cdf4f0d6193")
+		)
+		(pin "1"
+			(uuid "7d91d0ed-22af-42f9-a387-6fc328cb7e43")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 355.6 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab92142b-9768-438b-8faf-c3d349a0bc6d")
+		(property "Reference" "D27"
+			(at 358.14 53.3399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 358.14 55.8799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 355.6 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 355.6 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 355.6 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 355.6 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 355.6 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "998928d7-187e-4228-a459-2b9468bbc4a9")
+		)
+		(pin "1"
+			(uuid "09d1254d-d94c-46d7-8615-136a2c296e96")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 241.3 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b137c59c-235f-4680-8c6e-00c866fd7e3b")
+		(property "Reference" "D3"
+			(at 243.84 72.3899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 243.84 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.3 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 241.3 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 241.3 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 241.3 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a4097922-e232-4443-9c72-b0d82b7d6a98")
+		)
+		(pin "1"
+			(uuid "c5241a05-f1dc-4049-89d8-84c3eb1c1f63")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 309.88 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1adb882-10dd-45dd-a6c2-d9ac1a5b00a0")
+		(property "Reference" "S32"
+			(at 309.88 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 309.88 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 309.88 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 309.88 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 309.88 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bb2232fd-1701-4fc9-88a5-a93950ddd911")
+		)
+		(pin "1"
+			(uuid "3060421a-ffe5-4256-b9c5-2992f3bac0ac")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 271.78 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5a610db-d371-43f8-b5cb-2b126de0f570")
+		(property "Reference" "S9"
+			(at 271.78 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 271.78 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 271.78 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.78 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 271.78 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "59d7b108-296a-481b-b6b7-d44d1683f37f")
+		)
+		(pin "1"
+			(uuid "4280ac97-0bde-4d5b-97ed-a5038698612d")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 336.55 92.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd63e17c-dc2d-4f8d-9aa1-f30f0c2cc8bd")
+		(property "Reference" "D22"
+			(at 339.09 91.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 339.09 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 336.55 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 336.55 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 336.55 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 336.55 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 336.55 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6e11c08c-c297-4edc-9d6b-262e6e7badd0")
+		)
+		(pin "1"
+			(uuid "8a71c906-c64e-4ad4-bacc-8bf6dbe9016c")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 317.5 92.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c277b8d4-67d2-42af-aea2-95b9c1f20583")
+		(property "Reference" "D18"
+			(at 320.04 91.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 320.04 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 317.5 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 317.5 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 317.5 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 317.5 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 317.5 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a0867265-7624-43f5-9603-3a2a236b1010")
+		)
+		(pin "1"
+			(uuid "2b49c00d-5b5a-4ada-b2ed-3b8908c3e5ce")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 355.6 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6f10e04-c031-4e9d-bcf7-78e5ee02de09")
+		(property "Reference" "D35"
+			(at 358.14 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 358.14 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 355.6 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 355.6 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 355.6 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 355.6 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 355.6 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d811d546-6b05-4083-b0bf-64823909b11b")
+		)
+		(pin "1"
+			(uuid "cfd6b1b8-5796-4ad8-b808-0dd75f4f647c")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 271.78 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cad6acda-c7dd-40e6-a006-f7727e1369c0")
+		(property "Reference" "S10"
+			(at 271.78 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 271.78 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 271.78 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.78 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 271.78 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ca5f1cfd-7fb2-44fe-8f24-41da60aa7165")
+		)
+		(pin "1"
+			(uuid "1a29c146-26a1-43ec-b9d5-ad4fa357ba93")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 347.98 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd57868a-2200-4a50-9dbf-f199e9062d25")
+		(property "Reference" "S34"
+			(at 347.98 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 347.98 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 347.98 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 347.98 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 347.98 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7e79bffe-a93f-4bc8-82d1-2471decce913")
+		)
+		(pin "1"
+			(uuid "5de965a9-39bb-4398-af3e-6e4a50eeb0c5")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 271.78 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce5e2078-e38d-4bec-addf-6538a8f5ee9b")
+		(property "Reference" "S30"
+			(at 271.78 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 271.78 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 271.78 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.78 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 271.78 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b208f1f9-5643-40ae-b143-63dae552618c")
+		)
+		(pin "1"
+			(uuid "68951a66-2fe9-4458-a3e8-48370a943376")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 298.45 92.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cef59655-0af1-4447-b200-d6a745b91061")
+		(property "Reference" "D14"
+			(at 300.99 91.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 300.99 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 298.45 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 298.45 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 298.45 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 298.45 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 298.45 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "249c7c3c-6fd9-43dd-8869-3302542ace71")
+		)
+		(pin "1"
+			(uuid "a2378c37-ff3e-4c0a-876f-2c5f5415a0a7")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 260.35 92.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1eb6e7b-c20b-4527-9723-97d2aa6b3045")
+		(property "Reference" "D6"
+			(at 262.89 91.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 262.89 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 260.35 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 260.35 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 260.35 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "92b1fbc4-40a7-4ff8-a596-8218b8ca3bde")
+		)
+		(pin "1"
+			(uuid "af789275-7abb-4252-ba5f-9ca770563142")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 260.35 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d6df5227-54a1-4a92-a003-78269904bd6f")
+		(property "Reference" "D8"
+			(at 262.89 53.3399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 262.89 55.8799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 260.35 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 260.35 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 260.35 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8430ea32-4850-40a4-aa34-a72e24ec7ab6")
+		)
+		(pin "1"
+			(uuid "9de46f56-cb1f-4b63-89a9-a2f0d2465738")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 298.45 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8e697d0-6004-41d0-916f-552f267aa63f")
+		(property "Reference" "D16"
+			(at 300.99 53.3399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 300.99 55.8799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 298.45 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 298.45 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 298.45 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 298.45 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 298.45 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c2843298-5b61-4a43-ad2b-0f2416aefb7f")
+		)
+		(pin "1"
+			(uuid "7aed998e-71da-4e23-8a7a-1ef1874da85d")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 290.83 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da80781b-6dcd-4c85-a7e0-37cc4810e33c")
+		(property "Reference" "S14"
+			(at 290.83 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 290.83 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 290.83 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 290.83 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 290.83 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d14626c3-3471-4815-931b-262ec892d907")
+		)
+		(pin "1"
+			(uuid "b0184b48-72b1-4ffb-a0b6-4f82d01a4482")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 347.98 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df514034-ad29-4379-9796-8d8ab2791736")
+		(property "Reference" "S35"
+			(at 347.98 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 347.98 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 347.98 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 347.98 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 347.98 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3b0acb41-9e96-4693-98cc-a8c2a3592227")
+		)
+		(pin "1"
+			(uuid "a894c87c-be1f-4010-987e-539b0454f522")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 233.68 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3c168fa-7131-430e-a610-3168bbf402d4")
+		(property "Reference" "S2"
+			(at 233.68 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 233.68 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 233.68 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 233.68 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d2138a0-4087-4e59-aa3b-39425ab9c984")
+		)
+		(pin "2"
+			(uuid "13aacea0-426c-420b-afd3-b77d07ac11aa")
+		)
+		(instances
+			(project ""
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 260.35 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6241c65-a2c2-4647-a060-bee93bbbe7b2")
+		(property "Reference" "D5"
+			(at 262.89 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 262.89 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 260.35 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 260.35 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 260.35 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c7e0b6e5-aea3-4352-b84f-4b7a6d8fd402")
+		)
+		(pin "1"
+			(uuid "c14f58c7-181d-42cd-839a-85440389b6e9")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 279.4 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e992f8af-5cf7-4aad-89fa-0f2f00f87f91")
+		(property "Reference" "D12"
+			(at 281.94 53.3399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 281.94 55.8799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 279.4 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 279.4 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 279.4 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 279.4 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 279.4 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4d17ec8a-94d7-4526-9120-06e330a36972")
+		)
+		(pin "1"
+			(uuid "a28fe7cb-18df-40f5-b639-5611da670515")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 317.5 130.81 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb843618-b5c9-4d02-8c4c-7b76b1085b7a")
+		(property "Reference" "D32"
+			(at 320.04 129.5399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 320.04 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 317.5 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 317.5 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 317.5 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 317.5 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 317.5 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7528eb32-ceaf-4837-b2bc-5ce34763b450")
+		)
+		(pin "1"
+			(uuid "c58ac398-504d-4096-a485-79de45583650")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 309.88 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "faf6df95-6f47-4824-a49a-7a04a46dcd42")
+		(property "Reference" "S18"
+			(at 309.88 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 309.88 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 309.88 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 309.88 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 309.88 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ea5e1363-6fa3-47fb-a77f-3df3fdc97b96")
+		)
+		(pin "1"
+			(uuid "ed360ce6-41bc-4610-9bed-e7296eb8076b")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 290.83 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc557a3a-bd19-45f3-a075-06fac1566e45")
+		(property "Reference" "S16"
+			(at 290.83 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 290.83 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "daprice_keyswitches:Kailh_socket_PG1350_reversible"
+			(at 290.83 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 290.83 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 290.83 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "266fe11f-8f3d-4251-8b46-204477376c59")
+		)
+		(pin "1"
+			(uuid "ef347b0e-d4b2-4949-9619-839fcb27c227")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "S16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 317.5 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffe4a6cc-f7df-4f27-8beb-59bd2b5f1106")
+		(property "Reference" "D20"
+			(at 320.04 53.3399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 320.04 55.8799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 317.5 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 317.5 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 317.5 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 317.5 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 317.5 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "20390c28-d609-4947-a0ac-0ca975e2552c")
+		)
+		(pin "1"
+			(uuid "d2f42d58-7340-4211-a36f-21b2de7def52")
+		)
+		(instances
+			(project "SlimDash-rev1-kicad"
+				(path "/d2049868-8659-40e1-9f69-d91a53267064"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
