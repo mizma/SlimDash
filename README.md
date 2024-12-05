@@ -17,6 +17,9 @@ is needed for design decisions.
   * import the PCB design from ergogen and match with schematic
   * adjust footprints and part BOM
     * smt diode needs to be matched for proper size BOM
+  * Import the schematic from ergoSHIFT rev2
+    * consider adding surge protect to USB using C15879
+      * D+, D- and VBUS merits from protection.
   * Place parts
 * ergogen
   * after placing PCB parts, create cutout for the right backplate for the PCB parts
@@ -31,7 +34,7 @@ is needed for design decisions.
   * after placing PCB parts, create cutout for the left backplate for the PCB parts
     * throughhole mounted parts (TRRS Jack, type C and tactile switch for reset
       and boot)
-  * adjust outer dimensions to
+  * adjust outer dimensions to fit the parts if necessary.
 * QMK configuration
   * Make the `info.json`, `config.h` and `rules.mk`
     * First make the info.json
