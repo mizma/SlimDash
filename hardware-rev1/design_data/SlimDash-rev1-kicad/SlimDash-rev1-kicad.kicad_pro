@@ -467,7 +467,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "COL1"
+        "pattern": "COL0"
       },
       {
         "netclass": "Default",
@@ -487,7 +487,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "COL2"
+        "pattern": "COL1"
       },
       {
         "netclass": "Default",
@@ -507,7 +507,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "COL3"
+        "pattern": "COL2"
       },
       {
         "netclass": "Default",
@@ -527,7 +527,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "COL4"
+        "pattern": "COL3"
       },
       {
         "netclass": "Default",
@@ -547,7 +547,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "COL5"
+        "pattern": "COL4"
       },
       {
         "netclass": "Default",
@@ -567,7 +567,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "COL6"
+        "pattern": "COL5"
       },
       {
         "netclass": "Default",
@@ -587,7 +587,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "COL7"
+        "pattern": "COL6"
       },
       {
         "netclass": "Default",
@@ -635,23 +635,23 @@
       },
       {
         "netclass": "Default",
-        "pattern": "ROW2"
-      },
-      {
-        "netclass": "Default",
         "pattern": "ROW3"
       },
       {
         "netclass": "Default",
-        "pattern": "ROW4"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "ROW5"
+        "pattern": "ROW2"
       },
       {
         "netclass": "Default",
         "pattern": "ROW1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ROW0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ROW4"
       }
     ]
   },
