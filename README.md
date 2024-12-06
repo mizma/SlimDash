@@ -20,6 +20,7 @@ is needed for design decisions.
   * Import the schematic from ergoSHIFT rev2
     * consider adding surge protect to USB using C15879 or C283483
       * D+, D- and VBUS merits from protection.
+    * consider using C6186 for voltage regulator instead?
   * Place parts
 * ergogen
   * after placing PCB parts, create cutout for the right backplate for the PCB parts

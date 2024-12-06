@@ -4,70 +4,70 @@ meta:
 points:
   zones:
     matrix:
-      anchor.shift: [50,-100] # Fix KiCad placement
+      anchor.shift: [50, -100] # Fix KiCad placement
       columns:
         mcone:
-          key.column_net: COL1
+          key.column_net: COL0
         mctwo:
-          key.column_net: COL2
+          key.column_net: COL1
         mcthree:
           key.stagger: 0.25U
-          key.column_net: COL3
+          key.column_net: COL2
         mcfour:
           key.stagger: 0.125U
-          key.column_net: COL4
+          key.column_net: COL3
         mcfive:
           key.stagger: -0.125U
-          key.column_net: COL5
+          key.column_net: COL4
         mcsix:
           key.stagger: -0.125U
-          key.column_net: COL6
+          key.column_net: COL5
       rows:
         mrone:
           padding: U
-          row_net: ROW2
+          row_net: ROW3
         mrtwo:
           padding: U
-          row_net: ROW3
+          row_net: ROW2
         mrthree:
           padding: U
-          row_net: ROW4
+          row_net: ROW1
         mrfour:
           padding: U
-          row_net: ROW5
+          row_net: ROW0
     inner:
-      anchor.shift: [50+6u,-100]
+      anchor.shift: [50+6u, -100]
       columns:
         icone:
           key.stagger: 0.625U
-          key.column_net: COL7
+          key.column_net: COL6
       rows:
         irone:
           padding: U
-          row_net: ROW3
+          row_net: ROW2
         irtwo:
           padding: U
-          row_net: ROW4
+          row_net: ROW1
         irthree:
           padding: U
-          row_net: ROW5
+          row_net: ROW0
     lower:
       anchor.shift: [50, -100-U]
       columns:
         lcone:
-          key.column_net: COL1
+          key.column_net: COL0
         lctwo:
-          key.column_net: COL2
+          key.column_net: COL1
         lcthree:
           key.stagger: 0.25U
-          key.column_net: COL3
+          key.column_net: COL2
         lcfour:
           key.stagger: 0.125U
-          key.column_net: COL4
+          key.column_net: COL3
       rows:
         lrone:
           padding: U
-          row_net: ROW1
+          row_net: ROW4
     thumb:
       anchor:
         ref: matrix_mcsix_mrone
@@ -75,30 +75,30 @@ points:
         rotate: -30
       columns:
         tcone:
-          key.column_net: COL5
+          key.column_net: COL4
         tctwo:
           key.stagger: 0.5U
           key.width: 2U
           key.rotate: 90
-          key.column_net: COL6
+          key.column_net: COL5
       rows:
         trone:
           padding: U
-          row_net: ROW1
+          row_net: ROW4
     thumbOuter:
       anchor:
         ref: thumb_tcone_trone
-        shift: [2U,0]
+        shift: [2U, 0]
       columns:
         tOcone:
-          key.column_net: COL7
+          key.column_net: COL6
       rows:
         tOrone:
           padding: U
-          row_net: ROW1
+          row_net: ROW4
         tOrtwo:
           padding: U
-          row_net: ROW2
+          row_net: ROW3
   mirror:
     ref: matrix_mcone_mrone
     distance: 300
@@ -107,65 +107,65 @@ outlines:
     - what: polygon
       operation: stack
       points:
-      - ref: lower_lcone_lrone
-        shift: [-0.5U-2,-0.5U-2]
-      - ref: matrix_mcone_mrfour
-        shift: [-0.5U-2,0.5U+2]
-      - ref: matrix_mcfour_mrfour
-        shift: [-0.5U-2,0.5U+3.3]
-      - ref: matrix_mcfour_mrfour
-        shift: [0.5U+2,0.5U+3.3]
-      - ref: matrix_mcsix_mrfour
-        shift: [0.5U+2,0.5U+2]
-      - ref: inner_icone_irthree
-        shift: [5, 0.5U+2]
-      - ref: inner_icone_irthree
-        shift: [1.3U, 0.5U+2]
-      - ref: inner_icone_irthree
-        shift: [1.5U+3, 0.3U]
-      - ref: inner_icone_irthree
-        shift: [1.5U+3, -3.6U]
-      - ref: thumbOuter_tOcone_tOrone
-        shift: [0.5U+2, -0.5U-2]
-      - ref: lower_lcone_lrone
-        shift: [4U+5.5,-0.5U-2]
+        - ref: lower_lcone_lrone
+          shift: [-0.5U-2, -0.5U-2]
+        - ref: matrix_mcone_mrfour
+          shift: [-0.5U-2, 0.5U+2]
+        - ref: matrix_mcfour_mrfour
+          shift: [-0.5U-2, 0.5U+3.3]
+        - ref: matrix_mcfour_mrfour
+          shift: [0.5U+2, 0.5U+3.3]
+        - ref: matrix_mcsix_mrfour
+          shift: [0.5U+2, 0.5U+2]
+        - ref: inner_icone_irthree
+          shift: [5, 0.5U+2]
+        - ref: inner_icone_irthree
+          shift: [1.3U, 0.5U+2]
+        - ref: inner_icone_irthree
+          shift: [1.5U+3, 0.3U]
+        - ref: inner_icone_irthree
+          shift: [1.5U+3, -3.6U]
+        - ref: thumbOuter_tOcone_tOrone
+          shift: [0.5U+2, -0.5U-2]
+        - ref: lower_lcone_lrone
+          shift: [4U+5.5, -0.5U-2]
       fillet: 2.5
   screw_holes_left:
     - what: circle
       radius: 1.1
       where: lower_lcone_lrone
       adjust:
-        shift: [0.5U,0.5U]
+        shift: [0.5U, 0.5U]
     - what: circle
       radius: 1.1
       where: matrix_mcone_mrthree
       adjust:
-        shift: [0.5U,0.5U]
+        shift: [0.5U, 0.5U]
     - what: circle
       radius: 1.1
       where: matrix_mcthree_mrfour
       adjust:
-        shift: [0.3U,0.55U]
+        shift: [0.3U, 0.55U]
     - what: circle
       radius: 1.1
       where: matrix_mcthree_mrtwo
       adjust:
-        shift: [0.5U-0.5,0.5U]
+        shift: [0.5U-0.5, 0.5U]
     - what: circle
       radius: 1.1
       where: lower_lcthree_lrone
       adjust:
-        shift: [0.5U-0.5,0.5U]
+        shift: [0.5U-0.5, 0.5U]
     - what: circle
       radius: 1.1
       where: matrix_mcsix_mrfour
       adjust:
-        shift: [0.7U,0.1U]
+        shift: [0.7U, 0.1U]
     - what: circle
       radius: 1.1
       where: thumb_tctwo_trone
       adjust:
-        shift: [0.1U,0.6U]
+        shift: [0.1U, 0.6U]
   thru_holes_left:
     - what: outline
       name: screw_holes_left
@@ -175,50 +175,53 @@ outlines:
       radius: 1.1
       where: inner_icone_irthree
       adjust:
-        shift: [1.25U,0.3U]
+        shift: [1.4U, 0.3U-2.4]
     - what: circle
       radius: 1.1
       where: inner_icone_irone
       adjust:
-        shift: [0.8U,-0.9U]
+        shift: [0.8U, -0.9U]
     - what: circle
       radius: 1.1
       where: inner_icone_irone
       adjust:
-        shift: [1.4U,-1.25U]
+        shift: [1.4U, -1.25U]
   thru_holes_cover:
     - what: outline
       name: screw_holes_cover
       expand: 1.4
+  diode_cutout:
+    - what: rectangle
+      where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
+      size: [2.5, 5.5]
+      adjust:
+        shift: [8, 3]
   baseplate_left:
     - what: outline
       name: board_left
     - what: polygon
       operation: subtract
       points:
-      - ref: inner_icone_irthree
-        shift: [0.5U+2,0.5U+2]
-      - ref: inner_icone_irthree
-        shift: [0.5U+2,-3U-1]
-      - ref: inner_icone_irthree
-        shift: [2U+2,-3.9U-1]
-      - ref: inner_icone_irthree
-        shift: [2U+2,0.5U+2]
+        - ref: inner_icone_irthree
+          shift: [0.5U+2, 0.5U+2]
+        - ref: inner_icone_irthree
+          shift: [0.5U+2, -3U-1]
+        - ref: inner_icone_irthree
+          shift: [2U+2, -3.9U-1]
+        - ref: inner_icone_irthree
+          shift: [2U+2, 0.5U+2]
       fillet: 2
     - what: rectangle
       operation: subtract
       where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
       size: [14.5, 14]
-    - what: rectangle
+    - what: outline
+      name: diode_cutout
       operation: subtract
-      where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
-      size: [14.5, 5.5]
-      adjust:
-        shift: [1.9,3]
     - what: rectangle
       operation: subtract
       where: thumb_tctwo_trone
-      size: [1.8U,U-6.5]
+      size: [1.8U, U-6.5]
     - what: outline
       name: screw_holes_left
       operation: subtract
@@ -228,14 +231,14 @@ outlines:
     - what: polygon
       operation: subtract
       points:
-      - ref: inner_icone_irthree
-        shift: [0.5U+2,0.5U+2]
-      - ref: inner_icone_irthree
-        shift: [0.5U+2,-3U-1]
-      - ref: inner_icone_irthree
-        shift: [2U+2,-3.9U-1]
-      - ref: inner_icone_irthree
-        shift: [2U+2,0.5U+2]
+        - ref: inner_icone_irthree
+          shift: [0.5U+2, 0.5U+2]
+        - ref: inner_icone_irthree
+          shift: [0.5U+2, -3U-1]
+        - ref: inner_icone_irthree
+          shift: [2U+2, -3.9U-1]
+        - ref: inner_icone_irthree
+          shift: [2U+2, 0.5U+2]
       fillet: 2
     - what: rectangle
       operation: subtract
@@ -244,7 +247,7 @@ outlines:
     - what: rectangle
       operation: subtract
       where: thumb_tctwo_trone
-      size: [1.8U,U-6.5]
+      size: [1.8U, U-6.5]
     - what: outline
       name: screw_holes_left
       operation: subtract
@@ -254,14 +257,14 @@ outlines:
     - what: polygon
       operation: intersect
       points:
-      - ref: inner_icone_irthree
-        shift: [0.5U+2,0.5U+2]
-      - ref: inner_icone_irthree
-        shift: [0.5U+2,-3U-1]
-      - ref: inner_icone_irthree
-        shift: [2U+2,-3.9U-1]
-      - ref: inner_icone_irthree
-        shift: [2U+2,0.5U+2]
+        - ref: inner_icone_irthree
+          shift: [0.5U+2, 0.5U+2]
+        - ref: inner_icone_irthree
+          shift: [0.5U+2, -3U-1]
+        - ref: inner_icone_irthree
+          shift: [2U+2, -3.9U-1]
+        - ref: inner_icone_irthree
+          shift: [2U+2, 0.5U+2]
       fillet: 2
     - what: outline
       name: screw_holes_cover
@@ -269,6 +272,13 @@ outlines:
   backplate_1left:
     - what: outline
       name: board_left
+    - what: rectangle
+      operation: subtract
+      where: inner_icone_irthree
+      size: [10.64, 9.42]
+      adjust:
+        shift: [0.85U+0.6, 0.437U-1.5]
+      fillet: 1.5
     - what: outline
       name: thru_holes_cover
       operation: subtract
@@ -280,10 +290,17 @@ outlines:
       where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
       size: [17, 10]
       adjust:
-        shift: [-1.25,-2.4]
+        shift: [-1.25, -2.4]
   backplate_1right:
     - what: outline
       name: board_left
+    - what: rectangle
+      operation: subtract
+      where: inner_icone_irthree
+      size: [10.64, 9.42]
+      adjust:
+        shift: [0.85U+0.6, 0.437U-1.5]
+      fillet: 1.5
     - what: outline
       name: thru_holes_cover
       operation: subtract
@@ -295,13 +312,10 @@ outlines:
       where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
       size: [17, 10]
       adjust:
-        shift: [1.25,-2.4]
-    - what: rectangle
+        shift: [1.25, -2.4]
+    - what: outline
+      name: diode_cutout
       operation: subtract
-      where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
-      size: [2, 5.5]
-      adjust:
-        shift: [8,3]
   backplate_2both:
     - what: outline
       name: board_left
@@ -317,14 +331,14 @@ outlines:
     - what: polygon
       operation: subtract
       points:
-      - ref: matrix_mcone_mrthree
-        shift: [-1.5U, 0]
-      - ref: matrix_mcone_mrthree
-        shift: [8U, 0]
-      - ref: matrix_mcone_mrthree
-        shift: [8U, -5U]
-      - ref: matrix_mcone_mrthree
-        shift: [-1.5U, -5U]
+        - ref: matrix_mcone_mrthree
+          shift: [-1.5U, 0]
+        - ref: matrix_mcone_mrthree
+          shift: [8U, 0]
+        - ref: matrix_mcone_mrthree
+          shift: [8U, -5U]
+        - ref: matrix_mcone_mrthree
+          shift: [-1.5U, -5U]
       fillet: 2
     - what: outline
       name: screw_holes_cover
@@ -370,5 +384,5 @@ pcbs:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
-          shift: [8,3]
+          shift: [8, 3]
           rotate: 270

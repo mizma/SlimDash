@@ -93,37 +93,37 @@
   )
 
   (net 0 "")
-(net 1 "COL1")
+(net 1 "COL0")
 (net 2 "mcone_mrone")
 (net 3 "mcone_mrtwo")
 (net 4 "mcone_mrthree")
 (net 5 "mcone_mrfour")
-(net 6 "COL2")
+(net 6 "COL1")
 (net 7 "mctwo_mrone")
 (net 8 "mctwo_mrtwo")
 (net 9 "mctwo_mrthree")
 (net 10 "mctwo_mrfour")
-(net 11 "COL3")
+(net 11 "COL2")
 (net 12 "mcthree_mrone")
 (net 13 "mcthree_mrtwo")
 (net 14 "mcthree_mrthree")
 (net 15 "mcthree_mrfour")
-(net 16 "COL4")
+(net 16 "COL3")
 (net 17 "mcfour_mrone")
 (net 18 "mcfour_mrtwo")
 (net 19 "mcfour_mrthree")
 (net 20 "mcfour_mrfour")
-(net 21 "COL5")
+(net 21 "COL4")
 (net 22 "mcfive_mrone")
 (net 23 "mcfive_mrtwo")
 (net 24 "mcfive_mrthree")
 (net 25 "mcfive_mrfour")
-(net 26 "COL6")
+(net 26 "COL5")
 (net 27 "mcsix_mrone")
 (net 28 "mcsix_mrtwo")
 (net 29 "mcsix_mrthree")
 (net 30 "mcsix_mrfour")
-(net 31 "COL7")
+(net 31 "COL6")
 (net 32 "icone_irone")
 (net 33 "icone_irtwo")
 (net 34 "icone_irthree")
@@ -135,11 +135,11 @@
 (net 40 "tctwo_trone")
 (net 41 "tOcone_tOrone")
 (net 42 "tOcone_tOrtwo")
-(net 43 "ROW2")
-(net 44 "ROW3")
-(net 45 "ROW4")
-(net 46 "ROW5")
-(net 47 "ROW1")
+(net 43 "ROW3")
+(net 44 "ROW2")
+(net 45 "ROW1")
+(net 46 "ROW0")
+(net 47 "ROW4")
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -149,37 +149,37 @@
     (uvia_dia 0.3)
     (uvia_drill 0.1)
     (add_net "")
-(add_net "COL1")
+(add_net "COL0")
 (add_net "mcone_mrone")
 (add_net "mcone_mrtwo")
 (add_net "mcone_mrthree")
 (add_net "mcone_mrfour")
-(add_net "COL2")
+(add_net "COL1")
 (add_net "mctwo_mrone")
 (add_net "mctwo_mrtwo")
 (add_net "mctwo_mrthree")
 (add_net "mctwo_mrfour")
-(add_net "COL3")
+(add_net "COL2")
 (add_net "mcthree_mrone")
 (add_net "mcthree_mrtwo")
 (add_net "mcthree_mrthree")
 (add_net "mcthree_mrfour")
-(add_net "COL4")
+(add_net "COL3")
 (add_net "mcfour_mrone")
 (add_net "mcfour_mrtwo")
 (add_net "mcfour_mrthree")
 (add_net "mcfour_mrfour")
-(add_net "COL5")
+(add_net "COL4")
 (add_net "mcfive_mrone")
 (add_net "mcfive_mrtwo")
 (add_net "mcfive_mrthree")
 (add_net "mcfive_mrfour")
-(add_net "COL6")
+(add_net "COL5")
 (add_net "mcsix_mrone")
 (add_net "mcsix_mrtwo")
 (add_net "mcsix_mrthree")
 (add_net "mcsix_mrfour")
-(add_net "COL7")
+(add_net "COL6")
 (add_net "icone_irone")
 (add_net "icone_irtwo")
 (add_net "icone_irthree")
@@ -191,11 +191,11 @@
 (add_net "tctwo_trone")
 (add_net "tOcone_tOrone")
 (add_net "tOcone_tOrtwo")
-(add_net "ROW2")
 (add_net "ROW3")
-(add_net "ROW4")
-(add_net "ROW5")
+(add_net "ROW2")
 (add_net "ROW1")
+(add_net "ROW0")
+(add_net "ROW4")
   )
 
   
@@ -237,7 +237,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 1 "COL1"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 1 "COL0"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 2 "mcone_mrone"))
         
         
@@ -246,7 +246,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 1 "COL1"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 1 "COL0"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 2 "mcone_mrone"))
         )
         
@@ -289,7 +289,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 1 "COL1"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 1 "COL0"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 3 "mcone_mrtwo"))
         
         
@@ -298,7 +298,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 1 "COL1"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 1 "COL0"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 3 "mcone_mrtwo"))
         )
         
@@ -341,7 +341,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 1 "COL1"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 1 "COL0"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 4 "mcone_mrthree"))
         
         
@@ -350,7 +350,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 1 "COL1"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 1 "COL0"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 4 "mcone_mrthree"))
         )
         
@@ -393,7 +393,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 1 "COL1"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 1 "COL0"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 5 "mcone_mrfour"))
         
         
@@ -402,7 +402,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 1 "COL1"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 1 "COL0"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 5 "mcone_mrfour"))
         )
         
@@ -445,7 +445,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 6 "COL2"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 6 "COL1"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 7 "mctwo_mrone"))
         
         
@@ -454,7 +454,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 6 "COL2"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 6 "COL1"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 7 "mctwo_mrone"))
         )
         
@@ -497,7 +497,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 6 "COL2"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 6 "COL1"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 8 "mctwo_mrtwo"))
         
         
@@ -506,7 +506,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 6 "COL2"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 6 "COL1"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 8 "mctwo_mrtwo"))
         )
         
@@ -549,7 +549,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 6 "COL2"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 6 "COL1"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 9 "mctwo_mrthree"))
         
         
@@ -558,7 +558,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 6 "COL2"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 6 "COL1"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 9 "mctwo_mrthree"))
         )
         
@@ -601,7 +601,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 6 "COL2"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 6 "COL1"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 10 "mctwo_mrfour"))
         
         
@@ -610,7 +610,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 6 "COL2"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 6 "COL1"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 10 "mctwo_mrfour"))
         )
         
@@ -653,7 +653,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 11 "COL3"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 11 "COL2"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 12 "mcthree_mrone"))
         
         
@@ -662,7 +662,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 11 "COL3"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 11 "COL2"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 12 "mcthree_mrone"))
         )
         
@@ -705,7 +705,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 11 "COL3"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 11 "COL2"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 13 "mcthree_mrtwo"))
         
         
@@ -714,7 +714,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 11 "COL3"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 11 "COL2"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 13 "mcthree_mrtwo"))
         )
         
@@ -757,7 +757,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 11 "COL3"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 11 "COL2"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 14 "mcthree_mrthree"))
         
         
@@ -766,7 +766,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 11 "COL3"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 11 "COL2"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 14 "mcthree_mrthree"))
         )
         
@@ -809,7 +809,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 11 "COL3"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 11 "COL2"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 15 "mcthree_mrfour"))
         
         
@@ -818,7 +818,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 11 "COL3"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 11 "COL2"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 15 "mcthree_mrfour"))
         )
         
@@ -861,7 +861,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 16 "COL4"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 16 "COL3"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 17 "mcfour_mrone"))
         
         
@@ -870,7 +870,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 16 "COL4"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 16 "COL3"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 17 "mcfour_mrone"))
         )
         
@@ -913,7 +913,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 16 "COL4"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 16 "COL3"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 18 "mcfour_mrtwo"))
         
         
@@ -922,7 +922,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 16 "COL4"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 16 "COL3"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 18 "mcfour_mrtwo"))
         )
         
@@ -965,7 +965,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 16 "COL4"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 16 "COL3"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 19 "mcfour_mrthree"))
         
         
@@ -974,7 +974,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 16 "COL4"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 16 "COL3"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 19 "mcfour_mrthree"))
         )
         
@@ -1017,7 +1017,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 16 "COL4"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 16 "COL3"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 20 "mcfour_mrfour"))
         
         
@@ -1026,7 +1026,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 16 "COL4"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 16 "COL3"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 20 "mcfour_mrfour"))
         )
         
@@ -1069,7 +1069,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 21 "COL5"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 21 "COL4"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 22 "mcfive_mrone"))
         
         
@@ -1078,7 +1078,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 21 "COL5"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 21 "COL4"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 22 "mcfive_mrone"))
         )
         
@@ -1121,7 +1121,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 21 "COL5"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 21 "COL4"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 23 "mcfive_mrtwo"))
         
         
@@ -1130,7 +1130,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 21 "COL5"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 21 "COL4"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 23 "mcfive_mrtwo"))
         )
         
@@ -1173,7 +1173,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 21 "COL5"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 21 "COL4"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 24 "mcfive_mrthree"))
         
         
@@ -1182,7 +1182,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 21 "COL5"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 21 "COL4"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 24 "mcfive_mrthree"))
         )
         
@@ -1225,7 +1225,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 21 "COL5"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 21 "COL4"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 25 "mcfive_mrfour"))
         
         
@@ -1234,7 +1234,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 21 "COL5"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 21 "COL4"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 25 "mcfive_mrfour"))
         )
         
@@ -1277,7 +1277,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 26 "COL6"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 26 "COL5"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 27 "mcsix_mrone"))
         
         
@@ -1286,7 +1286,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 26 "COL6"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 26 "COL5"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 27 "mcsix_mrone"))
         )
         
@@ -1329,7 +1329,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 26 "COL6"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 26 "COL5"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 28 "mcsix_mrtwo"))
         
         
@@ -1338,7 +1338,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 26 "COL6"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 26 "COL5"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 28 "mcsix_mrtwo"))
         )
         
@@ -1381,7 +1381,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 26 "COL6"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 26 "COL5"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 29 "mcsix_mrthree"))
         
         
@@ -1390,7 +1390,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 26 "COL6"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 26 "COL5"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 29 "mcsix_mrthree"))
         )
         
@@ -1433,7 +1433,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 26 "COL6"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 26 "COL5"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 30 "mcsix_mrfour"))
         
         
@@ -1442,7 +1442,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 26 "COL6"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 26 "COL5"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 30 "mcsix_mrfour"))
         )
         
@@ -1485,7 +1485,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 31 "COL7"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 31 "COL6"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 32 "icone_irone"))
         
         
@@ -1494,7 +1494,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 31 "COL7"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 31 "COL6"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 32 "icone_irone"))
         )
         
@@ -1537,7 +1537,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 31 "COL7"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 31 "COL6"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 33 "icone_irtwo"))
         
         
@@ -1546,7 +1546,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 31 "COL7"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 31 "COL6"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 33 "icone_irtwo"))
         )
         
@@ -1589,7 +1589,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 31 "COL7"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 31 "COL6"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 34 "icone_irthree"))
         
         
@@ -1598,7 +1598,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 31 "COL7"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 31 "COL6"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 34 "icone_irthree"))
         )
         
@@ -1641,7 +1641,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 1 "COL1"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 1 "COL0"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 35 "lcone_lrone"))
         
         
@@ -1650,7 +1650,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 1 "COL1"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 1 "COL0"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 35 "lcone_lrone"))
         )
         
@@ -1693,7 +1693,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 6 "COL2"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 6 "COL1"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 36 "lctwo_lrone"))
         
         
@@ -1702,7 +1702,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 6 "COL2"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 6 "COL1"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 36 "lctwo_lrone"))
         )
         
@@ -1745,7 +1745,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 11 "COL3"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 11 "COL2"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 37 "lcthree_lrone"))
         
         
@@ -1754,7 +1754,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 11 "COL3"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 11 "COL2"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 37 "lcthree_lrone"))
         )
         
@@ -1797,7 +1797,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 16 "COL4"))
+          (pad 1 smd rect (at -3.275 -5.95 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 16 "COL3"))
           (pad 2 smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 38 "lcfour_lrone"))
         
         
@@ -1806,7 +1806,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 16 "COL4"))
+          (pad 1 smd rect (at 3.275 -5.95 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 16 "COL3"))
           (pad 2 smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 38 "lcfour_lrone"))
         )
         
@@ -1849,7 +1849,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 150) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 21 "COL5"))
+          (pad 1 smd rect (at -3.275 -5.95 150) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 21 "COL4"))
           (pad 2 smd rect (at 8.275 -3.75 150) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 39 "tcone_trone"))
         
         
@@ -1858,7 +1858,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 150) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 21 "COL5"))
+          (pad 1 smd rect (at 3.275 -5.95 150) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 21 "COL4"))
           (pad 2 smd rect (at -8.275 -3.75 150) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 39 "tcone_trone"))
         )
         
@@ -1901,7 +1901,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 240) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 26 "COL6"))
+          (pad 1 smd rect (at -3.275 -5.95 240) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 26 "COL5"))
           (pad 2 smd rect (at 8.275 -3.75 240) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 40 "tctwo_trone"))
         
         
@@ -1910,7 +1910,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 240) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 26 "COL6"))
+          (pad 1 smd rect (at 3.275 -5.95 240) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 26 "COL5"))
           (pad 2 smd rect (at -8.275 -3.75 240) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 40 "tctwo_trone"))
         )
         
@@ -1953,7 +1953,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 150) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 31 "COL7"))
+          (pad 1 smd rect (at -3.275 -5.95 150) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 31 "COL6"))
           (pad 2 smd rect (at 8.275 -3.75 150) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 41 "tOcone_tOrone"))
         
         
@@ -1962,7 +1962,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 150) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 31 "COL7"))
+          (pad 1 smd rect (at 3.275 -5.95 150) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 31 "COL6"))
           (pad 2 smd rect (at -8.275 -3.75 150) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 41 "tOcone_tOrone"))
         )
         
@@ -2005,7 +2005,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at -3.275 -5.95 150) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 31 "COL7"))
+          (pad 1 smd rect (at -3.275 -5.95 150) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 31 "COL6"))
           (pad 2 smd rect (at 8.275 -3.75 150) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask)  (net 42 "tOcone_tOrtwo"))
         
         
@@ -2014,7 +2014,7 @@
           (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       
           
-          (pad 1 smd rect (at 3.275 -5.95 150) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 31 "COL7"))
+          (pad 1 smd rect (at 3.275 -5.95 150) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 31 "COL6"))
           (pad 2 smd rect (at -8.275 -3.75 150) (size 2.6 2.6) (layers F.Cu F.Paste F.Mask)  (net 42 "tOcone_tOrtwo"))
         )
         
@@ -2046,13 +2046,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "ROW2"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "ROW3"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 2 "mcone_mrone"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "ROW2"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "ROW3"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 2 "mcone_mrone"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "ROW2"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "ROW3"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 2 "mcone_mrone"))
     )
   
@@ -2085,13 +2085,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 44 "ROW3"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 44 "ROW2"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 3 "mcone_mrtwo"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 44 "ROW3"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 44 "ROW2"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 3 "mcone_mrtwo"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 44 "ROW3"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 44 "ROW2"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 3 "mcone_mrtwo"))
     )
   
@@ -2124,13 +2124,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 45 "ROW4"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 45 "ROW1"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 4 "mcone_mrthree"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 45 "ROW4"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 45 "ROW1"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 4 "mcone_mrthree"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 45 "ROW4"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 45 "ROW1"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 4 "mcone_mrthree"))
     )
   
@@ -2163,13 +2163,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 46 "ROW5"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 46 "ROW0"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 5 "mcone_mrfour"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 46 "ROW5"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 46 "ROW0"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 5 "mcone_mrfour"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 46 "ROW5"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 46 "ROW0"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 5 "mcone_mrfour"))
     )
   
@@ -2202,13 +2202,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "ROW2"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "ROW3"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 7 "mctwo_mrone"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "ROW2"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "ROW3"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 7 "mctwo_mrone"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "ROW2"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "ROW3"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 7 "mctwo_mrone"))
     )
   
@@ -2241,13 +2241,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 44 "ROW3"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 44 "ROW2"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 8 "mctwo_mrtwo"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 44 "ROW3"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 44 "ROW2"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 8 "mctwo_mrtwo"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 44 "ROW3"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 44 "ROW2"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 8 "mctwo_mrtwo"))
     )
   
@@ -2280,13 +2280,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 45 "ROW4"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 45 "ROW1"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 9 "mctwo_mrthree"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 45 "ROW4"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 45 "ROW1"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 9 "mctwo_mrthree"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 45 "ROW4"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 45 "ROW1"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 9 "mctwo_mrthree"))
     )
   
@@ -2319,13 +2319,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 46 "ROW5"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 46 "ROW0"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 10 "mctwo_mrfour"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 46 "ROW5"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 46 "ROW0"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 10 "mctwo_mrfour"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 46 "ROW5"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 46 "ROW0"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 10 "mctwo_mrfour"))
     )
   
@@ -2358,13 +2358,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "ROW2"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "ROW3"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 12 "mcthree_mrone"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "ROW2"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "ROW3"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 12 "mcthree_mrone"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "ROW2"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "ROW3"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 12 "mcthree_mrone"))
     )
   
@@ -2397,13 +2397,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 44 "ROW3"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 44 "ROW2"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 13 "mcthree_mrtwo"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 44 "ROW3"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 44 "ROW2"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 13 "mcthree_mrtwo"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 44 "ROW3"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 44 "ROW2"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 13 "mcthree_mrtwo"))
     )
   
@@ -2436,13 +2436,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 45 "ROW4"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 45 "ROW1"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 14 "mcthree_mrthree"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 45 "ROW4"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 45 "ROW1"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 14 "mcthree_mrthree"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 45 "ROW4"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 45 "ROW1"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 14 "mcthree_mrthree"))
     )
   
@@ -2475,13 +2475,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 46 "ROW5"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 46 "ROW0"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 15 "mcthree_mrfour"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 46 "ROW5"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 46 "ROW0"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 15 "mcthree_mrfour"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 46 "ROW5"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 46 "ROW0"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 15 "mcthree_mrfour"))
     )
   
@@ -2514,13 +2514,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "ROW2"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "ROW3"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 17 "mcfour_mrone"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "ROW2"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "ROW3"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 17 "mcfour_mrone"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "ROW2"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "ROW3"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 17 "mcfour_mrone"))
     )
   
@@ -2553,13 +2553,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 44 "ROW3"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 44 "ROW2"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 18 "mcfour_mrtwo"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 44 "ROW3"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 44 "ROW2"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 18 "mcfour_mrtwo"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 44 "ROW3"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 44 "ROW2"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 18 "mcfour_mrtwo"))
     )
   
@@ -2592,13 +2592,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 45 "ROW4"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 45 "ROW1"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 19 "mcfour_mrthree"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 45 "ROW4"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 45 "ROW1"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 19 "mcfour_mrthree"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 45 "ROW4"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 45 "ROW1"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 19 "mcfour_mrthree"))
     )
   
@@ -2631,13 +2631,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 46 "ROW5"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 46 "ROW0"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 20 "mcfour_mrfour"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 46 "ROW5"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 46 "ROW0"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 20 "mcfour_mrfour"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 46 "ROW5"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 46 "ROW0"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 20 "mcfour_mrfour"))
     )
   
@@ -2670,13 +2670,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "ROW2"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "ROW3"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 22 "mcfive_mrone"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "ROW2"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "ROW3"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 22 "mcfive_mrone"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "ROW2"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "ROW3"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 22 "mcfive_mrone"))
     )
   
@@ -2709,13 +2709,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 44 "ROW3"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 44 "ROW2"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 23 "mcfive_mrtwo"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 44 "ROW3"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 44 "ROW2"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 23 "mcfive_mrtwo"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 44 "ROW3"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 44 "ROW2"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 23 "mcfive_mrtwo"))
     )
   
@@ -2748,13 +2748,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 45 "ROW4"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 45 "ROW1"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 24 "mcfive_mrthree"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 45 "ROW4"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 45 "ROW1"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 24 "mcfive_mrthree"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 45 "ROW4"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 45 "ROW1"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 24 "mcfive_mrthree"))
     )
   
@@ -2787,13 +2787,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 46 "ROW5"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 46 "ROW0"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 25 "mcfive_mrfour"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 46 "ROW5"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 46 "ROW0"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 25 "mcfive_mrfour"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 46 "ROW5"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 46 "ROW0"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 25 "mcfive_mrfour"))
     )
   
@@ -2826,13 +2826,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "ROW2"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "ROW3"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 27 "mcsix_mrone"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "ROW2"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "ROW3"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 27 "mcsix_mrone"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "ROW2"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "ROW3"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 27 "mcsix_mrone"))
     )
   
@@ -2865,13 +2865,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 44 "ROW3"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 44 "ROW2"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 28 "mcsix_mrtwo"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 44 "ROW3"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 44 "ROW2"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 28 "mcsix_mrtwo"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 44 "ROW3"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 44 "ROW2"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 28 "mcsix_mrtwo"))
     )
   
@@ -2904,13 +2904,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 45 "ROW4"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 45 "ROW1"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 29 "mcsix_mrthree"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 45 "ROW4"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 45 "ROW1"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 29 "mcsix_mrthree"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 45 "ROW4"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 45 "ROW1"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 29 "mcsix_mrthree"))
     )
   
@@ -2943,13 +2943,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 46 "ROW5"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 46 "ROW0"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 30 "mcsix_mrfour"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 46 "ROW5"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 46 "ROW0"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 30 "mcsix_mrfour"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 46 "ROW5"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 46 "ROW0"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 30 "mcsix_mrfour"))
     )
   
@@ -2982,13 +2982,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 44 "ROW3"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 44 "ROW2"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 32 "icone_irone"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 44 "ROW3"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 44 "ROW2"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 32 "icone_irone"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 44 "ROW3"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 44 "ROW2"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 32 "icone_irone"))
     )
   
@@ -3021,13 +3021,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 45 "ROW4"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 45 "ROW1"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 33 "icone_irtwo"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 45 "ROW4"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 45 "ROW1"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 33 "icone_irtwo"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 45 "ROW4"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 45 "ROW1"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 33 "icone_irtwo"))
     )
   
@@ -3060,13 +3060,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 46 "ROW5"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 46 "ROW0"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 34 "icone_irthree"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 46 "ROW5"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 46 "ROW0"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 34 "icone_irthree"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 46 "ROW5"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 46 "ROW0"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 34 "icone_irthree"))
     )
   
@@ -3099,13 +3099,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 47 "ROW1"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 47 "ROW4"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 35 "lcone_lrone"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 47 "ROW1"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 47 "ROW4"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 35 "lcone_lrone"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 47 "ROW1"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 47 "ROW4"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 35 "lcone_lrone"))
     )
   
@@ -3138,13 +3138,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 47 "ROW1"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 47 "ROW4"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 36 "lctwo_lrone"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 47 "ROW1"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 47 "ROW4"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 36 "lctwo_lrone"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 47 "ROW1"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 47 "ROW4"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 36 "lctwo_lrone"))
     )
   
@@ -3177,13 +3177,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 47 "ROW1"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 47 "ROW4"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 37 "lcthree_lrone"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 47 "ROW1"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 47 "ROW4"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 37 "lcthree_lrone"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 47 "ROW1"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 47 "ROW4"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 37 "lcthree_lrone"))
     )
   
@@ -3216,13 +3216,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 47 "ROW1"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 47 "ROW4"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 38 "lcfour_lrone"))
-        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 47 "ROW1"))
+        (pad 1 smd rect (at -1.65 0 270) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 47 "ROW4"))
         (pad 2 smd rect (at 1.65 0 270) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 38 "lcfour_lrone"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 47 "ROW1"))
+        (pad 1 thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 47 "ROW4"))
         (pad 2 thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 38 "lcfour_lrone"))
     )
   
@@ -3255,13 +3255,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 240) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 47 "ROW1"))
+        (pad 1 smd rect (at -1.65 0 240) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 47 "ROW4"))
         (pad 2 smd rect (at 1.65 0 240) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 39 "tcone_trone"))
-        (pad 1 smd rect (at -1.65 0 240) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 47 "ROW1"))
+        (pad 1 smd rect (at -1.65 0 240) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 47 "ROW4"))
         (pad 2 smd rect (at 1.65 0 240) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 39 "tcone_trone"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 240) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 47 "ROW1"))
+        (pad 1 thru_hole rect (at -3.81 0 240) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 47 "ROW4"))
         (pad 2 thru_hole circle (at 3.81 0 240) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 39 "tcone_trone"))
     )
   
@@ -3294,13 +3294,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 330) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 47 "ROW1"))
+        (pad 1 smd rect (at -1.65 0 330) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 47 "ROW4"))
         (pad 2 smd rect (at 1.65 0 330) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 40 "tctwo_trone"))
-        (pad 1 smd rect (at -1.65 0 330) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 47 "ROW1"))
+        (pad 1 smd rect (at -1.65 0 330) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 47 "ROW4"))
         (pad 2 smd rect (at 1.65 0 330) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 40 "tctwo_trone"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 330) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 47 "ROW1"))
+        (pad 1 thru_hole rect (at -3.81 0 330) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 47 "ROW4"))
         (pad 2 thru_hole circle (at 3.81 0 330) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 40 "tctwo_trone"))
     )
   
@@ -3333,13 +3333,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 240) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 47 "ROW1"))
+        (pad 1 smd rect (at -1.65 0 240) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 47 "ROW4"))
         (pad 2 smd rect (at 1.65 0 240) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 41 "tOcone_tOrone"))
-        (pad 1 smd rect (at -1.65 0 240) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 47 "ROW1"))
+        (pad 1 smd rect (at -1.65 0 240) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 47 "ROW4"))
         (pad 2 smd rect (at 1.65 0 240) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 41 "tOcone_tOrone"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 240) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 47 "ROW1"))
+        (pad 1 thru_hole rect (at -3.81 0 240) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 47 "ROW4"))
         (pad 2 thru_hole circle (at 3.81 0 240) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 41 "tOcone_tOrone"))
     )
   
@@ -3372,13 +3372,13 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 240) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "ROW2"))
+        (pad 1 smd rect (at -1.65 0 240) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 43 "ROW3"))
         (pad 2 smd rect (at 1.65 0 240) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 42 "tOcone_tOrtwo"))
-        (pad 1 smd rect (at -1.65 0 240) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "ROW2"))
+        (pad 1 smd rect (at -1.65 0 240) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "ROW3"))
         (pad 2 smd rect (at 1.65 0 240) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 42 "tOcone_tOrtwo"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 240) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "ROW2"))
+        (pad 1 thru_hole rect (at -3.81 0 240) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 43 "ROW3"))
         (pad 2 thru_hole circle (at 3.81 0 240) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 42 "tOcone_tOrtwo"))
     )
   
@@ -3412,7 +3412,7 @@
 (gr_circle (center 97.025 104.76249999999999) (end 99.525 104.76249999999999) (layer Edge.Cuts) (width 0.15))
 (gr_circle (center 158.335 38.56375000000001) (end 160.835 38.56375000000001) (layer Edge.Cuts) (width 0.15))
 (gr_circle (center 149.65081229999998 114.3650796) (end 152.15081229999998 114.3650796) (layer Edge.Cuts) (width 0.15))
-(gr_circle (center 187.8125 44.27875) (end 190.3125 44.27875) (layer Edge.Cuts) (width 0.15))
+(gr_circle (center 190.67000000000002 46.67875000000001) (end 193.17000000000002 46.67875000000001) (layer Edge.Cuts) (width 0.15))
 (gr_circle (center 179.24 105.23875) (end 181.74 105.23875) (layer Edge.Cuts) (width 0.15))
 (gr_circle (center 190.67000000000002 111.90625) (end 193.17000000000002 111.90625) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 131.0317132848902 130.575) (end 40.975 130.575) (angle 90) (layer Cmts.User) (width 0.15))
@@ -3593,8 +3593,8 @@
 (gr_line (start 114.25 104.90625) (end 99.75 104.90625) (angle 90) (layer Cmts.User) (width 0.15))
 (gr_line (start 99.75 104.90625) (end 99.75 118.90625) (angle 90) (layer Cmts.User) (width 0.15))
 (gr_line (start 127.6013158 122.9159278) (end 140.15868419999998 130.16592780000002) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 140.15868419999998 130.16592780000002) (end 143.7836841850735 123.88724367585345) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 146.53368422837477 119.12410390085344) (end 147.15868419999998 118.0415722) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 140.15868419999998 130.16592780000002) (end 143.78368415834936 123.88724372214102) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 146.53368420165063 119.12410394714101) (end 147.15868419999998 118.0415722) (angle 90) (layer Cmts.User) (width 0.15))
 (gr_line (start 147.15868419999998 118.0415722) (end 134.6013158 110.7915722) (angle 90) (layer Cmts.User) (width 0.15))
 (gr_line (start 134.6013158 110.7915722) (end 127.6013158 122.9159278) (angle 90) (layer Cmts.User) (width 0.15))
 (gr_line (start 161.03416049999998 131.50854220000002) (end 168.28416049999998 118.9511738) (angle 90) (layer Cmts.User) (width 0.15))
@@ -3604,117 +3604,117 @@
 (gr_line (start 148.90980489999998 124.50854220000001) (end 149.53767328521212 124.87104218280199) (angle 90) (layer Cmts.User) (width 0.15))
 (gr_line (start 160.40629207771215 131.1460421957924) (end 161.03416049999998 131.50854220000002) (angle 90) (layer Cmts.User) (width 0.15))
 (gr_line (start 160.59688369999998 141.9659278) (end 173.1542521 149.2159278) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 173.1542521 149.2159278) (end 176.77925208507352 142.93724367585344) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 179.52925212837476 138.17410390085348) (end 180.1542521 137.0915722) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 173.1542521 149.2159278) (end 176.77925205834939 142.93724372214098) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 179.52925210165066 138.17410394714102) (end 180.1542521 137.0915722) (angle 90) (layer Cmts.User) (width 0.15))
 (gr_line (start 180.1542521 137.0915722) (end 167.5968837 129.8415722) (angle 90) (layer Cmts.User) (width 0.15))
 (gr_line (start 167.5968837 129.8415722) (end 160.59688369999998 141.9659278) (angle 90) (layer Cmts.User) (width 0.15))
 (gr_line (start 170.1218837 125.4681439) (end 182.67925209999999 132.7181439) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 182.67925209999999 132.7181439) (end 186.3042520850735 126.43945977585344) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 189.05425212837477 121.67632000085342) (end 189.67925209999999 120.5937883) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 182.67925209999999 132.7181439) (end 186.30425205834936 126.43945982214103) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 189.05425210165066 121.67632004714096) (end 189.67925209999999 120.5937883) (angle 90) (layer Cmts.User) (width 0.15))
 (gr_line (start 189.67925209999999 120.5937883) (end 177.1218837 113.3437883) (angle 90) (layer Cmts.User) (width 0.15))
 (gr_line (start 177.1218837 113.3437883) (end 170.1218837 125.4681439) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 57.25 99.75) (end 59.15 99.75) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 59.15 99.75) (end 59.15 94.25) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 59.15 94.25) (end 57.25 94.25) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 57.25 80.7) (end 59.15 80.7) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 59.15 80.7) (end 59.15 75.2) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 59.15 75.2) (end 57.25 75.2) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 57.25 61.650000000000006) (end 59.15 61.650000000000006) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 59.15 61.650000000000006) (end 59.15 56.150000000000006) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 59.15 56.150000000000006) (end 57.25 56.150000000000006) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 57.25 42.60000000000001) (end 59.15 42.60000000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 59.15 42.60000000000001) (end 59.15 37.10000000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 59.15 37.10000000000001) (end 57.25 37.10000000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 76.25 99.75) (end 78.15 99.75) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 78.15 99.75) (end 78.15 94.25) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 78.15 94.25) (end 76.25 94.25) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 76.25 80.7) (end 78.15 80.7) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 78.15 80.7) (end 78.15 75.2) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 78.15 75.2) (end 76.25 75.2) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 76.25 61.650000000000006) (end 78.15 61.650000000000006) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 78.15 61.650000000000006) (end 78.15 56.150000000000006) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 78.15 56.150000000000006) (end 76.25 56.150000000000006) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 76.25 42.60000000000001) (end 78.15 42.60000000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 78.15 42.60000000000001) (end 78.15 37.10000000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 78.15 37.10000000000001) (end 76.25 37.10000000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 95.25 94.9875) (end 97.15 94.9875) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 97.15 94.9875) (end 97.15 89.4875) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 97.15 89.4875) (end 95.25 89.4875) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 95.25 75.9375) (end 97.15 75.9375) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 97.15 75.9375) (end 97.15 70.4375) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 97.15 70.4375) (end 95.25 70.4375) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 95.25 56.8875) (end 97.15 56.8875) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 97.15 56.8875) (end 97.15 51.3875) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 97.15 51.3875) (end 95.25 51.3875) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 95.25 37.837500000000006) (end 97.15 37.837500000000006) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 97.15 37.837500000000006) (end 97.15 32.337500000000006) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 97.15 32.337500000000006) (end 95.25 32.337500000000006) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 114.25 92.60625) (end 116.15 92.60625) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 116.15 92.60625) (end 116.15 87.10625) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 116.15 87.10625) (end 114.25 87.10625) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 114.25 73.55625) (end 116.15 73.55625) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 116.15 73.55625) (end 116.15 68.05625) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 116.15 68.05625) (end 114.25 68.05625) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 114.25 54.50625000000001) (end 116.15 54.50625000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 116.15 54.50625000000001) (end 116.15 49.00625000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 116.15 49.00625000000001) (end 114.25 49.00625000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 114.25 35.45625000000001) (end 116.15 35.45625000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 116.15 35.45625000000001) (end 116.15 29.95625000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 116.15 29.95625000000001) (end 114.25 29.95625000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 133.25 94.9875) (end 135.15 94.9875) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 135.15 94.9875) (end 135.15 89.4875) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 135.15 89.4875) (end 133.25 89.4875) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 133.25 75.9375) (end 135.15 75.9375) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 135.15 75.9375) (end 135.15 70.4375) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 135.15 70.4375) (end 133.25 70.4375) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 133.25 56.8875) (end 135.15 56.8875) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 135.15 56.8875) (end 135.15 51.3875) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 135.15 51.3875) (end 133.25 51.3875) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 133.25 37.837500000000006) (end 135.15 37.837500000000006) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 135.15 37.837500000000006) (end 135.15 32.337500000000006) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 135.15 32.337500000000006) (end 133.25 32.337500000000006) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 152.25 97.36875) (end 154.15 97.36875) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 154.15 97.36875) (end 154.15 91.86875) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 154.15 91.86875) (end 152.25 91.86875) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 152.25 78.31875000000001) (end 154.15 78.31875000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 154.15 78.31875000000001) (end 154.15 72.81875000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 154.15 72.81875000000001) (end 152.25 72.81875000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 152.25 59.26875000000001) (end 154.15 59.26875000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 154.15 59.26875000000001) (end 154.15 53.76875000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 154.15 53.76875000000001) (end 152.25 53.76875000000001) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 152.25 40.218750000000014) (end 154.15 40.218750000000014) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 154.15 40.218750000000014) (end 154.15 34.718750000000014) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 154.15 34.718750000000014) (end 152.25 34.718750000000014) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 171.25 87.84375) (end 173.15 87.84375) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 173.15 87.84375) (end 173.15 82.34375) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 173.15 82.34375) (end 171.25 82.34375) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 171.25 68.79375) (end 173.15 68.79375) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 173.15 68.79375) (end 173.15 63.29375) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 173.15 63.29375) (end 171.25 63.29375) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 171.25 49.743750000000006) (end 173.15 49.743750000000006) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 173.15 49.743750000000006) (end 173.15 44.243750000000006) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 173.15 44.243750000000006) (end 171.25 44.243750000000006) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 57.25 118.8) (end 59.15 118.8) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 59.15 118.8) (end 59.15 113.3) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 59.15 113.3) (end 57.25 113.3) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 76.25 118.8) (end 78.15 118.8) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 78.15 118.8) (end 78.15 113.3) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 78.15 113.3) (end 76.25 113.3) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 95.25 114.0375) (end 97.15 114.0375) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 97.15 114.0375) (end 97.15 108.5375) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 97.15 108.5375) (end 95.25 108.5375) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 114.25 111.65625) (end 116.15 111.65625) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 116.15 111.65625) (end 116.15 106.15625) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 116.15 106.15625) (end 114.25 106.15625) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 143.7836841850735 123.88724367585345) (end 145.42913249999998 124.8372437) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 145.42913249999998 124.8372437) (end 148.17913249999998 120.0741039) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 148.17913249999998 120.0741039) (end 146.53368422837477 119.12410390085346) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 176.77925208507352 142.93724367585344) (end 178.4247004 143.8872437) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 178.4247004 143.8872437) (end 181.1747004 139.12410390000002) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 181.1747004 139.12410390000002) (end 179.52925212837476 138.17410390085348) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 186.3042520850735 126.43945977585345) (end 187.94970039999998 127.3894598) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 187.94970039999998 127.3894598) (end 190.69970039999998 122.62631999999999) (angle 90) (layer Cmts.User) (width 0.15))
-(gr_line (start 190.69970039999998 122.62631999999999) (end 189.05425212837477 121.67632000085345) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 57.25 99.75) (end 59.25 99.75) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 59.25 99.75) (end 59.25 94.25) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 59.25 94.25) (end 57.25 94.25) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 57.25 80.7) (end 59.25 80.7) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 59.25 80.7) (end 59.25 75.2) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 59.25 75.2) (end 57.25 75.2) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 57.25 61.650000000000006) (end 59.25 61.650000000000006) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 59.25 61.650000000000006) (end 59.25 56.150000000000006) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 59.25 56.150000000000006) (end 57.25 56.150000000000006) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 57.25 42.60000000000001) (end 59.25 42.60000000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 59.25 42.60000000000001) (end 59.25 37.10000000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 59.25 37.10000000000001) (end 57.25 37.10000000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 76.25 99.75) (end 78.25 99.75) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 78.25 99.75) (end 78.25 94.25) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 78.25 94.25) (end 76.25 94.25) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 76.25 80.7) (end 78.25 80.7) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 78.25 80.7) (end 78.25 75.2) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 78.25 75.2) (end 76.25 75.2) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 76.25 61.650000000000006) (end 78.25 61.650000000000006) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 78.25 61.650000000000006) (end 78.25 56.150000000000006) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 78.25 56.150000000000006) (end 76.25 56.150000000000006) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 76.25 42.60000000000001) (end 78.25 42.60000000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 78.25 42.60000000000001) (end 78.25 37.10000000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 78.25 37.10000000000001) (end 76.25 37.10000000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 95.25 94.9875) (end 97.25 94.9875) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 97.25 94.9875) (end 97.25 89.4875) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 97.25 89.4875) (end 95.25 89.4875) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 95.25 75.9375) (end 97.25 75.9375) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 97.25 75.9375) (end 97.25 70.4375) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 97.25 70.4375) (end 95.25 70.4375) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 95.25 56.8875) (end 97.25 56.8875) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 97.25 56.8875) (end 97.25 51.3875) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 97.25 51.3875) (end 95.25 51.3875) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 95.25 37.837500000000006) (end 97.25 37.837500000000006) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 97.25 37.837500000000006) (end 97.25 32.337500000000006) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 97.25 32.337500000000006) (end 95.25 32.337500000000006) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 114.25 92.60625) (end 116.25 92.60625) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 116.25 92.60625) (end 116.25 87.10625) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 116.25 87.10625) (end 114.25 87.10625) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 114.25 73.55625) (end 116.25 73.55625) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 116.25 73.55625) (end 116.25 68.05625) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 116.25 68.05625) (end 114.25 68.05625) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 114.25 54.50625000000001) (end 116.25 54.50625000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 116.25 54.50625000000001) (end 116.25 49.00625000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 116.25 49.00625000000001) (end 114.25 49.00625000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 114.25 35.45625000000001) (end 116.25 35.45625000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 116.25 35.45625000000001) (end 116.25 29.95625000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 116.25 29.95625000000001) (end 114.25 29.95625000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 133.25 94.9875) (end 135.25 94.9875) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 135.25 94.9875) (end 135.25 89.4875) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 135.25 89.4875) (end 133.25 89.4875) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 133.25 75.9375) (end 135.25 75.9375) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 135.25 75.9375) (end 135.25 70.4375) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 135.25 70.4375) (end 133.25 70.4375) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 133.25 56.8875) (end 135.25 56.8875) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 135.25 56.8875) (end 135.25 51.3875) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 135.25 51.3875) (end 133.25 51.3875) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 133.25 37.837500000000006) (end 135.25 37.837500000000006) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 135.25 37.837500000000006) (end 135.25 32.337500000000006) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 135.25 32.337500000000006) (end 133.25 32.337500000000006) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 152.25 97.36875) (end 154.25 97.36875) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 154.25 97.36875) (end 154.25 91.86875) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 154.25 91.86875) (end 152.25 91.86875) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 152.25 78.31875000000001) (end 154.25 78.31875000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 154.25 78.31875000000001) (end 154.25 72.81875000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 154.25 72.81875000000001) (end 152.25 72.81875000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 152.25 59.26875000000001) (end 154.25 59.26875000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 154.25 59.26875000000001) (end 154.25 53.76875000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 154.25 53.76875000000001) (end 152.25 53.76875000000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 152.25 40.218750000000014) (end 154.25 40.218750000000014) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 154.25 40.218750000000014) (end 154.25 34.718750000000014) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 154.25 34.718750000000014) (end 152.25 34.718750000000014) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 171.25 87.84375) (end 173.25 87.84375) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 173.25 87.84375) (end 173.25 82.34375) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 173.25 82.34375) (end 171.25 82.34375) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 171.25 68.79375) (end 173.25 68.79375) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 173.25 68.79375) (end 173.25 63.29375) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 173.25 63.29375) (end 171.25 63.29375) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 171.25 49.743750000000006) (end 173.25 49.743750000000006) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 173.25 49.743750000000006) (end 173.25 44.243750000000006) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 173.25 44.243750000000006) (end 171.25 44.243750000000006) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 57.25 118.8) (end 59.25 118.8) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 59.25 118.8) (end 59.25 113.3) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 59.25 113.3) (end 57.25 113.3) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 76.25 118.8) (end 78.25 118.8) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 78.25 118.8) (end 78.25 113.3) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 78.25 113.3) (end 76.25 113.3) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 95.25 114.0375) (end 97.25 114.0375) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 97.25 114.0375) (end 97.25 108.5375) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 97.25 108.5375) (end 95.25 108.5375) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 114.25 111.65625) (end 116.25 111.65625) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 116.25 111.65625) (end 116.25 106.15625) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 116.25 106.15625) (end 114.25 106.15625) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 143.78368415834936 123.88724372214101) (end 145.515735 124.88724370000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 145.515735 124.88724370000001) (end 148.265735 120.12410390000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 148.265735 120.12410390000001) (end 146.53368420165063 119.12410394714101) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 176.77925205834939 142.937243722141) (end 178.5113029 143.93724369999998) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 178.5113029 143.93724369999998) (end 181.2613029 139.1741039) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 181.2613029 139.1741039) (end 179.52925210165066 138.17410394714102) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 186.30425205834936 126.43945982214102) (end 188.0363029 127.43945980000001) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 188.0363029 127.43945980000001) (end 190.7863029 122.67632) (angle 90) (layer Cmts.User) (width 0.15))
+(gr_line (start 190.7863029 122.67632) (end 189.05425210165066 121.67632004714102) (angle 90) (layer Cmts.User) (width 0.15))
 (gr_line (start 155.45879209999998 139.71536350000002) (end 160.40629207771215 131.14604219579235) (angle 90) (layer Cmts.User) (width 0.15))
 (gr_line (start 167.65629211478785 118.58867381719801) (end 172.60379209999996 110.01935250000001) (angle 90) (layer Cmts.User) (width 0.15))
 (gr_line (start 172.60379209999996 110.01935250000001) (end 161.73517329999999 103.74435250000002) (angle 90) (layer Cmts.User) (width 0.15))
@@ -3734,7 +3734,8 @@
 (gr_line (start 95.65916496831976 22.881250000000012) (end 118.32682869587627 22.881250000000012) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 118.72069643685624 22.912471306537935) (end 155.90263694222145 28.844458525321528) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 157.02591599377226 29.32621291308064) (end 168.3281499436897 37.955774305702974) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 169.84529673622046 38.46875000000001) (end 187.84345998227192 38.46875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 169.84529673622046 38.46875000000001) (end 173.9725 38.46875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 187.6125 38.46875000000001) (end 187.84345998227192 38.46875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 189.46606426058523 39.06686796681353) (end 194.69760427831324 43.530193591336285) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 195.575 45.43207562452275) (end 195.575 117.90955164703865) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 195.24534155382221 119.1503649278095) (end 175.83861899189216 153.0952131754782) (angle 90) (layer Dwgs.User) (width 0.15))
@@ -3750,7 +3751,14 @@
 (gr_arc (start 193.075 117.90955164703865) (end 195.2453415 119.15036494703865) (angle -29.75718080552332) (layer Dwgs.User) (width 0.15))
 (gr_arc (start 173.6682774380699 151.85439989470734) (end 172.4208420380699 154.02094199470733) (angle -90.17497427747898) (layer Dwgs.User) (width 0.15))
 (gr_arc (start 131.0317132848902 133.075) (end 132.2791486848902 130.9084579) (angle -29.93215508300326) (layer Dwgs.User) (width 0.15))
-(gr_circle (center 187.8125 44.27875) (end 190.3125 44.27875) (layer Dwgs.User) (width 0.15))
+(gr_line (start 176.9725 47.87890000000001) (end 184.6125 47.87890000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 186.1125 46.37890000000001) (end 186.1125 39.96875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 175.4725 39.96875000000001) (end 175.4725 46.37890000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_arc (start 173.9725 39.96875000000001) (end 175.4725 39.96875000000001) (angle -90) (layer Dwgs.User) (width 0.15))
+(gr_arc (start 176.9725 46.37890000000001) (end 175.4725 46.37890000000001) (angle -90) (layer Dwgs.User) (width 0.15))
+(gr_arc (start 184.6125 46.37890000000001) (end 184.6125 47.87890000000001) (angle -90) (layer Dwgs.User) (width 0.15))
+(gr_arc (start 187.6125 39.96875000000001) (end 187.6125 38.46875000000001) (angle -90) (layer Dwgs.User) (width 0.15))
+(gr_circle (center 190.67000000000002 46.67875000000001) (end 193.17000000000002 46.67875000000001) (layer Dwgs.User) (width 0.15))
 (gr_circle (center 179.24 105.23875) (end 181.74 105.23875) (layer Dwgs.User) (width 0.15))
 (gr_circle (center 190.67000000000002 111.90625) (end 193.17000000000002 111.90625) (layer Dwgs.User) (width 0.15))
 (gr_arc (start 59.525 109.52499999999999) (end 59.25 107.04017099999999) (angle -321.8963542665783) (layer Dwgs.User) (width 0.15))
@@ -3906,7 +3914,8 @@
 (gr_line (start 95.65916496831976 22.881250000000012) (end 118.32682869587627 22.881250000000012) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 118.72069643685624 22.912471306537935) (end 155.90263694222145 28.844458525321528) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 157.02591599377226 29.32621291308064) (end 168.3281499436897 37.955774305702974) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 169.84529673622046 38.46875000000001) (end 187.84345998227192 38.46875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 169.84529673622046 38.46875000000001) (end 173.9725 38.46875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 187.6125 38.46875000000001) (end 187.84345998227192 38.46875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 189.46606426058523 39.06686796681353) (end 194.69760427831324 43.530193591336285) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 195.575 45.43207562452275) (end 195.575 117.90955164703865) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 195.24534155382221 119.1503649278095) (end 175.83861899189216 153.0952131754782) (angle 90) (layer Dwgs.User) (width 0.15))
@@ -3922,7 +3931,14 @@
 (gr_arc (start 193.075 117.90955164703865) (end 195.2453415 119.15036494703865) (angle -29.75718080552332) (layer Dwgs.User) (width 0.15))
 (gr_arc (start 173.6682774380699 151.85439989470734) (end 172.4208420380699 154.02094199470733) (angle -90.17497427747898) (layer Dwgs.User) (width 0.15))
 (gr_arc (start 131.0317132848902 133.075) (end 132.2791486848902 130.9084579) (angle -29.93215508300326) (layer Dwgs.User) (width 0.15))
-(gr_circle (center 187.8125 44.27875) (end 190.3125 44.27875) (layer Dwgs.User) (width 0.15))
+(gr_line (start 176.9725 47.87890000000001) (end 184.6125 47.87890000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 186.1125 46.37890000000001) (end 186.1125 39.96875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 175.4725 39.96875000000001) (end 175.4725 46.37890000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_arc (start 173.9725 39.96875000000001) (end 175.4725 39.96875000000001) (angle -90) (layer Dwgs.User) (width 0.15))
+(gr_arc (start 176.9725 46.37890000000001) (end 175.4725 46.37890000000001) (angle -90) (layer Dwgs.User) (width 0.15))
+(gr_arc (start 184.6125 46.37890000000001) (end 184.6125 47.87890000000001) (angle -90) (layer Dwgs.User) (width 0.15))
+(gr_arc (start 187.6125 39.96875000000001) (end 187.6125 38.46875000000001) (angle -90) (layer Dwgs.User) (width 0.15))
+(gr_circle (center 190.67000000000002 46.67875000000001) (end 193.17000000000002 46.67875000000001) (layer Dwgs.User) (width 0.15))
 (gr_circle (center 179.24 105.23875) (end 181.74 105.23875) (layer Dwgs.User) (width 0.15))
 (gr_circle (center 190.67000000000002 111.90625) (end 193.17000000000002 111.90625) (layer Dwgs.User) (width 0.15))
 (gr_arc (start 59.525 109.52499999999999) (end 58.2080433 107.39999999999999) (angle -323.04806263663977) (layer Dwgs.User) (width 0.15))
@@ -3934,284 +3950,284 @@
 (gr_circle (center 149.65081229999998 114.3650796) (end 152.15081229999998 114.3650796) (layer Dwgs.User) (width 0.15))
 (gr_line (start 42.75 107.4) (end 58.2080433 107.39999999999999) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 59.75 107.03514559999999) (end 59.75 97.4) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 59.75 97.4) (end 59 97.4) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 57 97.4) (end 42.75 97.4) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 59.75 97.4) (end 59.25 97.4) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 56.75 97.4) (end 42.75 97.4) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 42.75 97.4) (end 42.75 107.4) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 42.75 88.35000000000001) (end 59.75 88.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 59.75 88.35000000000001) (end 59.75 78.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 59.75 78.35000000000001) (end 59 78.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 57 78.35000000000001) (end 42.75 78.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 59.75 78.35000000000001) (end 59.25 78.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 56.75 78.35000000000001) (end 42.75 78.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 42.75 78.35000000000001) (end 42.75 88.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 42.75 69.30000000000001) (end 59.75 69.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 59.75 69.30000000000001) (end 59.75 59.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 59.75 59.30000000000001) (end 59 59.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 57 59.30000000000001) (end 42.75 59.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 59.75 59.30000000000001) (end 59.25 59.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 56.75 59.30000000000001) (end 42.75 59.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 42.75 59.30000000000001) (end 42.75 69.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 42.75 50.25000000000001) (end 58.2080433 50.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 59.75 49.88514560000001) (end 59.75 40.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 59.75 40.25000000000001) (end 59 40.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 57 40.25000000000001) (end 42.75 40.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 59.75 40.25000000000001) (end 59.25 40.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 56.75 40.25000000000001) (end 42.75 40.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 42.75 40.25000000000001) (end 42.75 50.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 61.75 107.4) (end 78.75 107.4) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 78.75 107.4) (end 78.75 97.4) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 78.75 97.4) (end 78 97.4) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 76 97.4) (end 61.75 97.4) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 78.75 97.4) (end 78.25 97.4) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 75.75 97.4) (end 61.75 97.4) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 61.75 97.4) (end 61.75 107.4) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 61.75 88.35000000000001) (end 78.75 88.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 78.75 88.35000000000001) (end 78.75 78.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 78.75 78.35000000000001) (end 78 78.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 76 78.35000000000001) (end 61.75 78.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 78.75 78.35000000000001) (end 78.25 78.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 75.75 78.35000000000001) (end 61.75 78.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 61.75 78.35000000000001) (end 61.75 88.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 61.75 69.30000000000001) (end 78.75 69.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 78.75 69.30000000000001) (end 78.75 59.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 78.75 59.30000000000001) (end 78 59.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 76 59.30000000000001) (end 61.75 59.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 78.75 59.30000000000001) (end 78.25 59.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 75.75 59.30000000000001) (end 61.75 59.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 61.75 59.30000000000001) (end 61.75 69.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 61.75 50.25000000000001) (end 78.75 50.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 78.75 50.25000000000001) (end 78.75 40.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 78.75 40.25000000000001) (end 78 40.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 76 40.25000000000001) (end 61.75 40.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 78.75 40.25000000000001) (end 78.25 40.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 75.75 40.25000000000001) (end 61.75 40.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 61.75 40.25000000000001) (end 61.75 50.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 80.75 102.6375) (end 95.7080433 102.63749999999999) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 97.75 102.3699334) (end 97.75 92.6375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 97.75 92.6375) (end 97 92.6375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 95 92.6375) (end 80.75 92.6375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 97.75 92.6375) (end 97.25 92.6375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 94.75 92.6375) (end 80.75 92.6375) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 80.75 92.6375) (end 80.75 102.6375) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 80.75 83.5875) (end 97.75 83.5875) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 97.75 83.5875) (end 97.75 73.5875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 97.75 73.5875) (end 97 73.5875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 95 73.5875) (end 80.75 73.5875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 97.75 73.5875) (end 97.25 73.5875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 94.75 73.5875) (end 80.75 73.5875) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 80.75 73.5875) (end 80.75 83.5875) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 80.75 64.5375) (end 95.7080433 64.5375) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 97.75 64.2699334) (end 97.75 54.537499999999994) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 97.75 54.537499999999994) (end 97 54.537499999999994) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 95 54.537499999999994) (end 80.75 54.537499999999994) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 97.75 54.537499999999994) (end 97.25 54.537499999999994) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 94.75 54.537499999999994) (end 80.75 54.537499999999994) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 80.75 54.537499999999994) (end 80.75 64.5375) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 80.75 45.487500000000004) (end 97.75 45.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 97.75 45.487500000000004) (end 97.75 35.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 97.75 35.487500000000004) (end 97 35.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 95 35.487500000000004) (end 80.75 35.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 97.75 35.487500000000004) (end 97.25 35.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 94.75 35.487500000000004) (end 80.75 35.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 80.75 35.487500000000004) (end 80.75 45.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 99.75 100.25625000000001) (end 116.75 100.25625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 116.75 100.25625000000001) (end 116.75 90.25625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 116.75 90.25625000000001) (end 116 90.25625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 114 90.25625000000001) (end 99.75 90.25625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 116.75 90.25625000000001) (end 116.25 90.25625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 113.75 90.25625000000001) (end 99.75 90.25625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 99.75 90.25625000000001) (end 99.75 100.25625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 99.75 81.20625000000001) (end 116.75 81.20625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 116.75 81.20625000000001) (end 116.75 71.20625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 116.75 71.20625000000001) (end 116 71.20625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 114 71.20625000000001) (end 99.75 71.20625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 116.75 71.20625000000001) (end 116.25 71.20625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 113.75 71.20625000000001) (end 99.75 71.20625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 99.75 71.20625000000001) (end 99.75 81.20625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 99.75 62.15625000000001) (end 116.75 62.15625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 116.75 62.15625000000001) (end 116.75 52.15625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 116.75 52.15625000000001) (end 116 52.15625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 114 52.15625000000001) (end 99.75 52.15625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 116.75 52.15625000000001) (end 116.25 52.15625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 113.75 52.15625000000001) (end 99.75 52.15625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 99.75 52.15625000000001) (end 99.75 62.15625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 99.75 43.10625000000001) (end 116.75 43.10625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 116.75 43.10625000000001) (end 116.75 33.10625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 116.75 33.10625000000001) (end 116 33.10625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 114 33.10625000000001) (end 99.75 33.10625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 116.75 33.10625000000001) (end 116.25 33.10625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 113.75 33.10625000000001) (end 99.75 33.10625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 99.75 33.10625000000001) (end 99.75 43.10625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 118.75 102.6375) (end 135.75 102.6375) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 135.75 102.6375) (end 135.75 92.6375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 135.75 92.6375) (end 135 92.6375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 133 92.6375) (end 118.75 92.6375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 135.75 92.6375) (end 135.25 92.6375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 132.75 92.6375) (end 118.75 92.6375) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 118.75 92.6375) (end 118.75 102.6375) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 118.75 83.5875) (end 135.75 83.5875) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 135.75 83.5875) (end 135.75 73.5875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 135.75 73.5875) (end 135 73.5875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 133 73.5875) (end 118.75 73.5875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 135.75 73.5875) (end 135.25 73.5875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 132.75 73.5875) (end 118.75 73.5875) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 118.75 73.5875) (end 118.75 83.5875) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 118.75 64.5375) (end 135.75 64.5375) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 135.75 64.5375) (end 135.75 54.537499999999994) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 135.75 54.537499999999994) (end 135 54.537499999999994) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 133 54.537499999999994) (end 118.75 54.537499999999994) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 135.75 54.537499999999994) (end 135.25 54.537499999999994) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 132.75 54.537499999999994) (end 118.75 54.537499999999994) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 118.75 54.537499999999994) (end 118.75 64.5375) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 118.75 45.487500000000004) (end 135.75 45.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 135.75 45.487500000000004) (end 135.75 35.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 135.75 35.487500000000004) (end 135 35.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 133 35.487500000000004) (end 118.75 35.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 135.75 35.487500000000004) (end 135.25 35.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 132.75 35.487500000000004) (end 118.75 35.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 118.75 35.487500000000004) (end 118.75 45.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 137.75 105.01875000000001) (end 154.75 105.01875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 154.75 105.01875000000001) (end 154.75 95.01875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 154.75 95.01875000000001) (end 154 95.01875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 152 95.01875000000001) (end 137.75 95.01875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 154.75 95.01875000000001) (end 154.25 95.01875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 151.75 95.01875000000001) (end 137.75 95.01875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 137.75 95.01875000000001) (end 137.75 105.01875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 137.75 85.96875000000001) (end 154.75 85.96875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 154.75 85.96875000000001) (end 154.75 75.96875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 154.75 75.96875000000001) (end 154 75.96875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 152 75.96875000000001) (end 137.75 75.96875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 154.75 75.96875000000001) (end 154.25 75.96875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 151.75 75.96875000000001) (end 137.75 75.96875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 137.75 75.96875000000001) (end 137.75 85.96875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 137.75 66.91875000000002) (end 154.75 66.91875000000002) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 154.75 66.91875000000002) (end 154.75 56.91875000000002) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 154.75 56.91875000000002) (end 154 56.91875000000002) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 152 56.91875000000002) (end 137.75 56.91875000000002) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 154.75 56.91875000000002) (end 154.25 56.91875000000002) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 151.75 56.91875000000002) (end 137.75 56.91875000000002) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 137.75 56.91875000000002) (end 137.75 66.91875000000002) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 137.75 47.86875000000001) (end 154.75 47.86875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 154.75 47.86875000000001) (end 154.75 37.86875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 154.75 37.86875000000001) (end 154 37.86875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 152 37.86875000000001) (end 137.75 37.86875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 154.75 37.86875000000001) (end 154.25 37.86875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 151.75 37.86875000000001) (end 137.75 37.86875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 137.75 37.86875000000001) (end 137.75 47.86875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 156.75 95.49375) (end 173.75 95.49375) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 173.75 95.49375) (end 173.75 85.49375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 173.75 85.49375) (end 173 85.49375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 171 85.49375) (end 156.75 85.49375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 173.75 85.49375) (end 173.25 85.49375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 170.75 85.49375) (end 156.75 85.49375) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 156.75 85.49375) (end 156.75 95.49375) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 156.75 76.44375000000001) (end 173.75 76.44375000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 173.75 76.44375000000001) (end 173.75 66.44375000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 173.75 66.44375000000001) (end 173 66.44375000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 171 66.44375000000001) (end 156.75 66.44375000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 173.75 66.44375000000001) (end 173.25 66.44375000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 170.75 66.44375000000001) (end 156.75 66.44375000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 156.75 66.44375000000001) (end 156.75 76.44375000000001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 156.75 57.393750000000004) (end 173.75 57.393750000000004) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 173.75 57.393750000000004) (end 173.75 47.393750000000004) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 173.75 47.393750000000004) (end 173 47.393750000000004) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 171 47.393750000000004) (end 156.75 47.393750000000004) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 173.75 47.393750000000004) (end 173.25 47.393750000000004) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 170.75 47.393750000000004) (end 156.75 47.393750000000004) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 156.75 47.393750000000004) (end 156.75 57.393750000000004) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 42.75 126.45) (end 59.75 126.45) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 59.75 126.45) (end 59.75 116.45) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 59.75 116.45) (end 59 116.45) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 57 116.45) (end 42.75 116.45) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 59.75 116.45) (end 59.25 116.45) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 56.75 116.45) (end 42.75 116.45) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 42.75 116.45) (end 42.75 126.45) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 61.75 126.45) (end 78.75 126.45) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 78.75 126.45) (end 78.75 116.45) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 78.75 116.45) (end 78 116.45) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 76 116.45) (end 61.75 116.45) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 78.75 116.45) (end 78.25 116.45) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 75.75 116.45) (end 61.75 116.45) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 61.75 116.45) (end 61.75 126.45) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 80.75 121.6875) (end 97.75 121.6875) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 97.75 121.6875) (end 97.75 111.6875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 97.75 111.6875) (end 97 111.6875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 95 111.6875) (end 80.75 111.6875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 97.75 111.6875) (end 97.25 111.6875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 94.75 111.6875) (end 80.75 111.6875) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 80.75 111.6875) (end 80.75 121.6875) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 99.75 119.30625) (end 116.75 119.30625) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 116.75 119.30625) (end 116.75 109.30625) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 116.75 109.30625) (end 116 109.30625) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 114 109.30625) (end 99.75 109.30625) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 116.75 109.30625) (end 116.25 109.30625) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 113.75 109.30625) (end 99.75 109.30625) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 99.75 109.30625) (end 99.75 119.30625) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 127.4013159 123.262338) (end 142.1237477 131.762338) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 142.1237477 131.762338) (end 147.1237477 123.10208399999999) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 147.1237477 123.10208399999999) (end 146.4742285983287 122.72708397016754) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 144.74217779832867 121.72708397016753) (end 132.40131590000001 114.60208399999999) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 147.1237477 123.10208399999999) (end 146.6907349858287 122.85208399181819) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 144.5256714108287 121.6020839485169) (end 132.40131590000001 114.60208399999999) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 132.40131590000001 114.60208399999999) (end 127.4013159 123.262338) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 161.3805707 131.70854210000002) (end 169.8805707 116.9861103) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 169.8805707 116.9861103) (end 161.22031669999998 111.9861103) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 161.22031669999998 111.9861103) (end 160.84531667016753 112.63562940167134) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 159.84531667016753 114.3676802016713) (end 152.72031669999998 126.70854210000002) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 161.22031669999998 111.9861103) (end 160.97031669181817 112.4191230141713) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 159.7203166485169 114.58418658917134) (end 152.72031669999998 126.70854210000002) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 152.72031669999998 126.70854210000002) (end 161.3805707 131.70854210000002) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 160.3968838 142.312338) (end 175.1193156 150.812338) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 175.1193156 150.812338) (end 180.1193156 142.152084) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 180.1193156 142.152084) (end 179.4697964983287 141.77708397016755) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 177.73774569832867 140.77708397016755) (end 165.3968838 133.652084) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 180.1193156 142.152084) (end 179.68630288582867 141.9020839918182) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 177.5212393108287 140.65208394851692) (end 165.3968838 133.652084) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 165.3968838 133.652084) (end 160.3968838 142.312338) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 169.92188380000002 125.81455410000001) (end 184.6443156 134.3145541) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 184.6443156 134.3145541) (end 189.6443156 125.6543001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 189.6443156 125.6543001) (end 188.99479649832867 125.27930007016754) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 187.26274569832867 124.27930007016754) (end 174.92188380000002 117.1543001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 189.6443156 125.6543001) (end 189.21130288582867 125.40430009181817) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 187.04623931082867 124.1543000485169) (end 174.92188380000002 117.1543001) (angle 90) (layer Dwgs.User) (width 0.15))
 (gr_line (start 174.92188380000002 117.1543001) (end 169.92188380000002 125.81455410000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 59 97.4) (end 59 94.25) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 59 94.25) (end 57 94.25) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 57 94.25) (end 57 97.4) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 59 78.35000000000001) (end 59 75.2) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 59 75.2) (end 57 75.2) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 57 75.2) (end 57 78.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 59 59.30000000000001) (end 59 56.150000000000006) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 59 56.150000000000006) (end 57 56.150000000000006) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 57 56.150000000000006) (end 57 59.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 59 40.25000000000001) (end 59 37.10000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 59 37.10000000000001) (end 57 37.10000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 57 37.10000000000001) (end 57 40.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 78 97.4) (end 78 94.25) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 78 94.25) (end 76 94.25) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 76 94.25) (end 76 97.4) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 78 78.35000000000001) (end 78 75.2) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 78 75.2) (end 76 75.2) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 76 75.2) (end 76 78.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 78 59.30000000000001) (end 78 56.150000000000006) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 78 56.150000000000006) (end 76 56.150000000000006) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 76 56.150000000000006) (end 76 59.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 78 40.25000000000001) (end 78 37.10000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 78 37.10000000000001) (end 76 37.10000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 76 37.10000000000001) (end 76 40.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 97 92.6375) (end 97 89.4875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 97 89.4875) (end 95 89.4875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 95 89.4875) (end 95 92.6375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 97 73.5875) (end 97 70.4375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 97 70.4375) (end 95 70.4375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 95 70.4375) (end 95 73.5875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 97 54.537499999999994) (end 97 51.3875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 97 51.3875) (end 95 51.3875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 95 51.3875) (end 95 54.537499999999994) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 97 35.487500000000004) (end 97 32.337500000000006) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 97 32.337500000000006) (end 95 32.337500000000006) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 95 32.337500000000006) (end 95 35.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 116 90.25625000000001) (end 116 87.10625) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 116 87.10625) (end 114 87.10625) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 114 87.10625) (end 114 90.25625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 116 71.20625000000001) (end 116 68.05625) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 116 68.05625) (end 114 68.05625) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 114 68.05625) (end 114 71.20625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 116 52.15625000000001) (end 116 49.00625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 116 49.00625000000001) (end 114 49.00625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 114 49.00625000000001) (end 114 52.15625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 116 33.10625000000001) (end 116 29.95625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 116 29.95625000000001) (end 114 29.95625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 114 29.95625000000001) (end 114 33.10625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 135 92.6375) (end 135 89.4875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 135 89.4875) (end 133 89.4875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 133 89.4875) (end 133 92.6375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 135 73.5875) (end 135 70.4375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 135 70.4375) (end 133 70.4375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 133 70.4375) (end 133 73.5875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 135 54.537499999999994) (end 135 51.3875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 135 51.3875) (end 133 51.3875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 133 51.3875) (end 133 54.537499999999994) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 135 35.487500000000004) (end 135 32.337500000000006) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 135 32.337500000000006) (end 133 32.337500000000006) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 133 32.337500000000006) (end 133 35.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 154 95.01875000000001) (end 154 91.86875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 154 91.86875) (end 152 91.86875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 152 91.86875) (end 152 95.01875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 154 75.96875000000001) (end 154 72.81875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 154 72.81875000000001) (end 152 72.81875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 152 72.81875000000001) (end 152 75.96875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 154 56.91875000000002) (end 154 53.76875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 154 53.76875000000001) (end 152 53.76875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 152 53.76875000000001) (end 152 56.91875000000002) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 154 37.86875000000001) (end 154 34.718750000000014) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 154 34.718750000000014) (end 152 34.718750000000014) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 152 34.718750000000014) (end 152 37.86875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 173 85.49375) (end 173 82.34375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 173 82.34375) (end 171 82.34375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 171 82.34375) (end 171 85.49375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 173 66.44375000000001) (end 173 63.29375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 173 63.29375) (end 171 63.29375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 171 63.29375) (end 171 66.44375000000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 173 47.393750000000004) (end 173 44.243750000000006) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 173 44.243750000000006) (end 171 44.243750000000006) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 171 44.243750000000006) (end 171 47.393750000000004) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 59 116.45) (end 59 113.3) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 59 113.3) (end 57 113.3) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 57 113.3) (end 57 116.45) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 78 116.45) (end 78 113.3) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 78 113.3) (end 76 113.3) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 76 113.3) (end 76 116.45) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 97 111.6875) (end 97 108.5375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 97 108.5375) (end 95 108.5375) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 95 108.5375) (end 95 111.6875) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 116 109.30625) (end 116 106.15625) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 116 106.15625) (end 114 106.15625) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 114 106.15625) (end 114 109.30625) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 146.4742285983287 122.72708397016757) (end 148.04922860000002 119.99910390000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 148.04922860000002 119.99910390000001) (end 146.3171778 118.99910390000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 146.3171778 118.99910390000001) (end 144.74217779832867 121.72708397016754) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 160.84531667016753 112.63562940167134) (end 158.1173366 111.06062940000001) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 158.1173366 111.06062940000001) (end 157.1173366 112.7926802) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 157.1173366 112.7926802) (end 159.84531667016753 114.36768020167133) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 179.4697964983287 141.77708397016755) (end 181.04479650000002 139.0491039) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 181.04479650000002 139.0491039) (end 179.3127457 138.0491039) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 179.3127457 138.0491039) (end 177.73774569832867 140.7770839701675) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 188.99479649832867 125.27930007016761) (end 190.56979650000002 122.55132) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 190.56979650000002 122.55132) (end 188.8377457 121.55132) (angle 90) (layer Dwgs.User) (width 0.15))
-(gr_line (start 188.8377457 121.55132) (end 187.26274569832867 124.27930007016761) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 59.25 97.4) (end 59.25 94.25) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 59.25 94.25) (end 56.75 94.25) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 56.75 94.25) (end 56.75 97.4) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 59.25 78.35000000000001) (end 59.25 75.2) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 59.25 75.2) (end 56.75 75.2) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 56.75 75.2) (end 56.75 78.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 59.25 59.30000000000001) (end 59.25 56.150000000000006) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 59.25 56.150000000000006) (end 56.75 56.150000000000006) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 56.75 56.150000000000006) (end 56.75 59.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 59.25 40.25000000000001) (end 59.25 37.10000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 59.25 37.10000000000001) (end 56.75 37.10000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 56.75 37.10000000000001) (end 56.75 40.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 78.25 97.4) (end 78.25 94.25) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 78.25 94.25) (end 75.75 94.25) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 75.75 94.25) (end 75.75 97.4) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 78.25 78.35000000000001) (end 78.25 75.2) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 78.25 75.2) (end 75.75 75.2) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 75.75 75.2) (end 75.75 78.35000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 78.25 59.30000000000001) (end 78.25 56.150000000000006) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 78.25 56.150000000000006) (end 75.75 56.150000000000006) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 75.75 56.150000000000006) (end 75.75 59.30000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 78.25 40.25000000000001) (end 78.25 37.10000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 78.25 37.10000000000001) (end 75.75 37.10000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 75.75 37.10000000000001) (end 75.75 40.25000000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 97.25 92.6375) (end 97.25 89.4875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 97.25 89.4875) (end 94.75 89.4875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 94.75 89.4875) (end 94.75 92.6375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 97.25 73.5875) (end 97.25 70.4375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 97.25 70.4375) (end 94.75 70.4375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 94.75 70.4375) (end 94.75 73.5875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 97.25 54.537499999999994) (end 97.25 51.3875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 97.25 51.3875) (end 94.75 51.3875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 94.75 51.3875) (end 94.75 54.537499999999994) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 97.25 35.487500000000004) (end 97.25 32.337500000000006) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 97.25 32.337500000000006) (end 94.75 32.337500000000006) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 94.75 32.337500000000006) (end 94.75 35.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 116.25 90.25625000000001) (end 116.25 87.10625) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 116.25 87.10625) (end 113.75 87.10625) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 113.75 87.10625) (end 113.75 90.25625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 116.25 71.20625000000001) (end 116.25 68.05625) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 116.25 68.05625) (end 113.75 68.05625) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 113.75 68.05625) (end 113.75 71.20625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 116.25 52.15625000000001) (end 116.25 49.00625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 116.25 49.00625000000001) (end 113.75 49.00625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 113.75 49.00625000000001) (end 113.75 52.15625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 116.25 33.10625000000001) (end 116.25 29.95625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 116.25 29.95625000000001) (end 113.75 29.95625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 113.75 29.95625000000001) (end 113.75 33.10625000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 135.25 92.6375) (end 135.25 89.4875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 135.25 89.4875) (end 132.75 89.4875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 132.75 89.4875) (end 132.75 92.6375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 135.25 73.5875) (end 135.25 70.4375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 135.25 70.4375) (end 132.75 70.4375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 132.75 70.4375) (end 132.75 73.5875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 135.25 54.537499999999994) (end 135.25 51.3875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 135.25 51.3875) (end 132.75 51.3875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 132.75 51.3875) (end 132.75 54.537499999999994) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 135.25 35.487500000000004) (end 135.25 32.337500000000006) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 135.25 32.337500000000006) (end 132.75 32.337500000000006) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 132.75 32.337500000000006) (end 132.75 35.487500000000004) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 154.25 95.01875000000001) (end 154.25 91.86875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 154.25 91.86875) (end 151.75 91.86875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 151.75 91.86875) (end 151.75 95.01875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 154.25 75.96875000000001) (end 154.25 72.81875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 154.25 72.81875000000001) (end 151.75 72.81875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 151.75 72.81875000000001) (end 151.75 75.96875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 154.25 56.91875000000002) (end 154.25 53.76875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 154.25 53.76875000000001) (end 151.75 53.76875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 151.75 53.76875000000001) (end 151.75 56.91875000000002) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 154.25 37.86875000000001) (end 154.25 34.718750000000014) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 154.25 34.718750000000014) (end 151.75 34.718750000000014) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 151.75 34.718750000000014) (end 151.75 37.86875000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 173.25 85.49375) (end 173.25 82.34375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 173.25 82.34375) (end 170.75 82.34375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 170.75 82.34375) (end 170.75 85.49375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 173.25 66.44375000000001) (end 173.25 63.29375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 173.25 63.29375) (end 170.75 63.29375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 170.75 63.29375) (end 170.75 66.44375000000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 173.25 47.393750000000004) (end 173.25 44.243750000000006) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 173.25 44.243750000000006) (end 170.75 44.243750000000006) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 170.75 44.243750000000006) (end 170.75 47.393750000000004) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 59.25 116.45) (end 59.25 113.3) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 59.25 113.3) (end 56.75 113.3) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 56.75 113.3) (end 56.75 116.45) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 78.25 116.45) (end 78.25 113.3) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 78.25 113.3) (end 75.75 113.3) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 75.75 113.3) (end 75.75 116.45) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 97.25 111.6875) (end 97.25 108.5375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 97.25 108.5375) (end 94.75 108.5375) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 94.75 108.5375) (end 94.75 111.6875) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 116.25 109.30625) (end 116.25 106.15625) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 116.25 106.15625) (end 113.75 106.15625) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 113.75 106.15625) (end 113.75 109.30625) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 146.6907349858287 122.85208399181818) (end 148.265735 120.12410390000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 148.265735 120.12410390000001) (end 146.1006714 118.87410390000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 146.1006714 118.87410390000001) (end 144.5256714108287 121.6020839485169) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 160.97031669181817 112.41912301417133) (end 158.2423366 110.84412300000001) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 158.2423366 110.84412300000001) (end 156.9923366 113.0091866) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 156.9923366 113.0091866) (end 159.7203166485169 114.58418658917134) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 179.68630288582867 141.90208399181813) (end 181.2613029 139.1741039) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 181.2613029 139.1741039) (end 179.0962393 137.9241039) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 179.0962393 137.9241039) (end 177.5212393108287 140.65208394851692) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 189.21130288582867 125.40430009181824) (end 190.7863029 122.67632) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 190.7863029 122.67632) (end 188.6212393 121.42632) (angle 90) (layer Dwgs.User) (width 0.15))
+(gr_line (start 188.6212393 121.42632) (end 187.04623931082867 124.15430004851697) (angle 90) (layer Dwgs.User) (width 0.15))
 
 )
 
