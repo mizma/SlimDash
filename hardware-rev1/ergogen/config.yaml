@@ -129,7 +129,7 @@ outlines:
           shift: [0.5U+2, -0.5U-2]
         - ref: lower_lcone_lrone
           shift: [4U+5.5, -0.5U-2]
-      fillet: 2.5
+      #fillet: 2.5
   screw_holes_left:
     - what: circle
       radius: 1.1
@@ -210,7 +210,7 @@ outlines:
           shift: [2U+2, -3.9U-1]
         - ref: inner_icone_irthree
           shift: [2U+2, 0.5U+2]
-      fillet: 2
+      fillet: 2.5
     - what: rectangle
       operation: subtract
       where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
@@ -239,7 +239,7 @@ outlines:
           shift: [2U+2, -3.9U-1]
         - ref: inner_icone_irthree
           shift: [2U+2, 0.5U+2]
-      fillet: 2
+      fillet: 2.5
     - what: rectangle
       operation: subtract
       where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
@@ -265,49 +265,93 @@ outlines:
           shift: [2U+2, -3.9U-1]
         - ref: inner_icone_irthree
           shift: [2U+2, 0.5U+2]
-      fillet: 2
+      fillet: 2.5
     - what: outline
       name: screw_holes_cover
       operation: subtract
   backplate_1left:
     - what: outline
       name: board_left
-    - what: rectangle
+      fillet: 2.5
+    - what: rectangle # USB-C Connector Cutout
       operation: subtract
       where: inner_icone_irthree
       size: [10.64, 9.42]
       adjust:
         shift: [0.85U+0.6, 0.437U-1.5]
-      fillet: 1.5
+    - what: rectangle # TRRS Cutout
+      operation: subtract
+      where: inner_icone_irone
+      size: [12.5, 8.4]
+      adjust:
+        shift: [25.5, -14.8]
+    - what: rectangle # RST1 switch cutout
+      operation: subtract
+      where: inner_icone_irone
+      size: [6.5, 11]
+      adjust:
+        shift: [28.8, -5.1]
+    - what: rectangle # BOOT1 switch cutout
+      operation: subtract
+      where: inner_icone_irthree
+      size: [6.5, 9]
+      adjust:
+        shift: [28.8, -6]
+      fillet: 0.5
     - what: outline
       name: thru_holes_cover
       operation: subtract
     - what: outline
       name: thru_holes_left
       operation: subtract
-    - what: rectangle
+    - what: rectangle # Kailh Switch cutout
       operation: subtract
       where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
       size: [17, 10]
       adjust:
         shift: [-1.25, -2.4]
+    - what: rectangle # RGB LED cutout
+      operation: subtract
+      where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
+      size: [6.8, 4.2]
+      adjust:
+        shift: [0, 4.2]
   backplate_1right:
     - what: outline
       name: board_left
-    - what: rectangle
+      fillet: 2.5
+    - what: rectangle # USB-C connector cutout
       operation: subtract
       where: inner_icone_irthree
       size: [10.64, 9.42]
       adjust:
         shift: [0.85U+0.6, 0.437U-1.5]
-      fillet: 1.5
+    - what: rectangle # TRRS Cutout
+      operation: subtract
+      where: inner_icone_irone
+      size: [12.5, 8.4]
+      adjust:
+        shift: [25.5, -14.8]
+    - what: rectangle # RST1 switch cutout
+      operation: subtract
+      where: inner_icone_irone
+      size: [6.5, 11]
+      adjust:
+        shift: [28.8, -5.1]
+    - what: rectangle # BOOT1 switch cutout
+      operation: subtract
+      where: inner_icone_irthree
+      size: [6.5, 9]
+      adjust:
+        shift: [28.8, -6]
+      fillet: 0.5
     - what: outline
       name: thru_holes_cover
       operation: subtract
     - what: outline
       name: thru_holes_left
       operation: subtract
-    - what: rectangle
+    - what: rectangle # Kailh Switch cutout
       operation: subtract
       where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
       size: [17, 10]
@@ -316,9 +360,16 @@ outlines:
     - what: outline
       name: diode_cutout
       operation: subtract
+    - what: rectangle # RGB LED Cutout
+      operation: subtract
+      where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
+      size: [6.8, 4.2]
+      adjust:
+        shift: [0, 4.2]
   backplate_2both:
     - what: outline
       name: board_left
+      fillet: 2.5
     - what: outline
       name: screw_holes_cover
       operation: subtract
@@ -328,6 +379,7 @@ outlines:
   backplate_3both:
     - what: outline
       name: board_left
+      fillet: 2.5
     - what: polygon
       operation: subtract
       points:
@@ -346,11 +398,15 @@ outlines:
     - what: outline
       name: screw_holes_left
       operation: subtract
+  pcb_both:
+    - what: outline
+      name: board_left
+      fillet: 2.5
 pcbs:
   slimdash:
     outlines:
       main:
-        outline: board_left
+        outline: pcb_both
       mount_hole:
         outline: thru_holes_left
       plate_mount_hole:
@@ -375,8 +431,6 @@ pcbs:
           hotswap: true
           from: "{{column_net}}"
           to: "{{colrow}}"
-        adjust:
-          rotate: 180
       diode:
         what: diode
         where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
@@ -386,3 +440,12 @@ pcbs:
         adjust:
           shift: [8, 3]
           rotate: 270
+      rgb:
+        what: rgb
+        where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
+        params:
+          VCC: "+5V"
+          din: DIN
+          dout: DOUT
+        adjust:
+          shift: [0, 4.7]

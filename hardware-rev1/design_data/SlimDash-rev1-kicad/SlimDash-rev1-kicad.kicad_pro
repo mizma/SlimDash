@@ -652,6 +652,22 @@
       {
         "netclass": "Default",
         "pattern": "ROW4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "DIN"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "DOUT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "GND"
       }
     ]
   },
