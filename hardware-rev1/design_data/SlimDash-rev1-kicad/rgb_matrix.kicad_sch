@@ -186,7 +186,7 @@
 				)
 			)
 		)
-		(symbol "LED:SK6812MINI"
+		(symbol "mzm_kicad:SK6812MINI-E"
 			(pin_names
 				(offset 0.254)
 			)
@@ -202,7 +202,7 @@
 					(justify right bottom)
 				)
 			)
-			(property "Value" "SK6812MINI"
+			(property "Value" "SK6812MINI-E"
 				(at 1.27 -5.715 0)
 				(effects
 					(font
@@ -211,7 +211,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+			(property "Footprint" "LED_SMD:LED_SK6812MINI_E"
 				(at 1.27 -7.62 0)
 				(effects
 					(font
@@ -221,7 +221,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 				(at 2.54 -9.525 0)
 				(effects
 					(font
@@ -232,7 +232,7 @@
 				)
 			)
 			(property "Description" "RGB LED with integrated controller"
-				(at 0 0 0)
+				(at 0.254 9.144 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -258,7 +258,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "SK6812MINI_0_0"
+			(symbol "SK6812MINI-E_0_0"
 				(text "RGB"
 					(at 2.286 -4.191 0)
 					(effects
@@ -268,7 +268,18 @@
 					)
 				)
 			)
-			(symbol "SK6812MINI_0_1"
+			(symbol "SK6812MINI-E_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
 				(polyline
 					(pts
 						(xy 1.27 -3.556) (xy 1.778 -3.556)
@@ -353,23 +364,12 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start 5.08 5.08)
-					(end -5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
 			)
-			(symbol "SK6812MINI_1_1"
-				(pin output line
-					(at 7.62 0 180)
+			(symbol "SK6812MINI-E_1_1"
+				(pin power_in line
+					(at 0 7.62 270)
 					(length 2.54)
-					(name "DOUT"
+					(name "VDD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -384,10 +384,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -7.62 90)
+				(pin output line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "VSS"
+					(name "DOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -402,10 +402,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 0 0)
+				(pin power_in line
+					(at 0 -7.62 90)
 					(length 2.54)
-					(name "DIN"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -420,10 +420,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 7.62 270)
+				(pin input line
+					(at -7.62 0 0)
 					(length 2.54)
-					(name "VDD"
+					(name "DIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1404,7 +1404,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 241.3 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1438,7 +1438,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 243.84 79.375 0)
 			(effects
 				(font
@@ -1449,7 +1449,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 241.3 69.85 0)
+			(at 241.554 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1545,7 +1545,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 152.4 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1579,7 +1579,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 154.94 114.935 0)
 			(effects
 				(font
@@ -1590,7 +1590,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 152.4 105.41 0)
+			(at 152.654 96.266 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2017,7 +2017,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 81.28 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2051,7 +2051,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 83.82 43.815 0)
 			(effects
 				(font
@@ -2062,7 +2062,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 81.28 34.29 0)
+			(at 81.534 25.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2092,7 +2092,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 205.74 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2126,7 +2126,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 208.28 79.375 0)
 			(effects
 				(font
@@ -2137,7 +2137,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 205.74 69.85 0)
+			(at 205.994 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2233,7 +2233,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 187.96 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2267,7 +2267,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 190.5 114.935 0)
 			(effects
 				(font
@@ -2278,7 +2278,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 187.96 105.41 0)
+			(at 188.214 96.266 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2440,7 +2440,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 63.5 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2474,7 +2474,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 66.04 79.375 0)
 			(effects
 				(font
@@ -2485,7 +2485,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 63.5 69.85 0)
+			(at 63.754 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3043,7 +3043,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 81.28 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3077,7 +3077,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 83.82 79.375 0)
 			(effects
 				(font
@@ -3088,7 +3088,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 81.28 69.85 0)
+			(at 81.534 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3118,7 +3118,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 45.72 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3152,7 +3152,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 48.26 114.935 0)
 			(effects
 				(font
@@ -3163,7 +3163,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 45.72 105.41 0)
+			(at 45.974 96.266 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3193,7 +3193,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 187.96 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3227,7 +3227,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 190.5 43.815 0)
 			(effects
 				(font
@@ -3238,7 +3238,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 187.96 34.29 0)
+			(at 188.214 25.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3268,7 +3268,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 63.5 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3302,7 +3302,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 66.04 114.935 0)
 			(effects
 				(font
@@ -3313,7 +3313,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 63.5 105.41 0)
+			(at 63.754 96.266 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3541,7 +3541,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 223.52 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3575,7 +3575,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 226.06 43.815 0)
 			(effects
 				(font
@@ -3586,7 +3586,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 223.52 34.29 0)
+			(at 223.774 25.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3880,7 +3880,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 170.18 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3914,7 +3914,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 172.72 43.815 0)
 			(effects
 				(font
@@ -3925,7 +3925,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 170.18 34.29 0)
+			(at 170.434 25.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4087,7 +4087,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 187.96 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4121,7 +4121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 190.5 79.375 0)
 			(effects
 				(font
@@ -4132,7 +4132,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 187.96 69.85 0)
+			(at 188.214 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4492,7 +4492,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 45.72 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4526,7 +4526,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 48.26 79.375 0)
 			(effects
 				(font
@@ -4537,7 +4537,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 45.72 69.85 0)
+			(at 45.974 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4699,7 +4699,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 241.3 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4733,7 +4733,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 243.84 43.815 0)
 			(effects
 				(font
@@ -4744,7 +4744,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 241.3 34.29 0)
+			(at 241.554 25.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4774,7 +4774,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 134.62 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4808,7 +4808,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 137.16 43.815 0)
 			(effects
 				(font
@@ -4819,7 +4819,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 134.62 34.29 0)
+			(at 134.874 25.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5113,7 +5113,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 63.5 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5147,7 +5147,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 66.04 43.815 0)
 			(effects
 				(font
@@ -5158,7 +5158,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 63.5 34.29 0)
+			(at 63.754 25.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5254,7 +5254,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 116.84 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5288,7 +5288,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 119.38 79.375 0)
 			(effects
 				(font
@@ -5299,7 +5299,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 116.84 69.85 0)
+			(at 117.094 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5395,7 +5395,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 170.18 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5429,7 +5429,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 172.72 114.935 0)
 			(effects
 				(font
@@ -5440,7 +5440,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 170.18 105.41 0)
+			(at 170.434 96.266 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5734,7 +5734,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 99.06 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5768,7 +5768,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 101.6 114.935 0)
 			(effects
 				(font
@@ -5779,7 +5779,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 99.06 105.41 0)
+			(at 99.314 96.266 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6007,7 +6007,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 152.4 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6041,7 +6041,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 154.94 79.375 0)
 			(effects
 				(font
@@ -6052,7 +6052,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 152.4 69.85 0)
+			(at 152.654 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6544,7 +6544,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 81.28 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6578,7 +6578,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 83.82 114.935 0)
 			(effects
 				(font
@@ -6589,7 +6589,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 81.28 105.41 0)
+			(at 81.534 96.266 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6619,7 +6619,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 205.74 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6653,7 +6653,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 208.28 114.935 0)
 			(effects
 				(font
@@ -6664,7 +6664,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 205.74 105.41 0)
+			(at 205.994 96.266 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6694,7 +6694,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 223.52 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6728,7 +6728,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 226.06 79.375 0)
 			(effects
 				(font
@@ -6739,7 +6739,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 223.52 69.85 0)
+			(at 223.774 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6901,7 +6901,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 99.06 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6935,7 +6935,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 101.6 79.375 0)
 			(effects
 				(font
@@ -6946,7 +6946,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 99.06 69.85 0)
+			(at 99.314 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7174,7 +7174,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 152.4 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7208,7 +7208,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 154.94 43.815 0)
 			(effects
 				(font
@@ -7219,7 +7219,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 152.4 34.29 0)
+			(at 152.654 25.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7249,7 +7249,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 223.52 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7283,7 +7283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 226.06 114.935 0)
 			(effects
 				(font
@@ -7294,7 +7294,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 223.52 105.41 0)
+			(at 223.774 96.266 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7324,7 +7324,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 205.74 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7358,7 +7358,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 208.28 43.815 0)
 			(effects
 				(font
@@ -7369,7 +7369,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 205.74 34.29 0)
+			(at 205.994 25.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7399,7 +7399,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 170.18 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7433,7 +7433,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 172.72 79.375 0)
 			(effects
 				(font
@@ -7444,7 +7444,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 170.18 69.85 0)
+			(at 170.434 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7474,7 +7474,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 99.06 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7508,7 +7508,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 101.6 43.815 0)
 			(effects
 				(font
@@ -7519,7 +7519,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 99.06 34.29 0)
+			(at 99.314 25.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7681,7 +7681,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 134.62 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7715,7 +7715,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 137.16 114.935 0)
 			(effects
 				(font
@@ -7726,7 +7726,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 134.62 105.41 0)
+			(at 134.874 96.266 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7756,7 +7756,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 116.84 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7790,7 +7790,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 119.38 43.815 0)
 			(effects
 				(font
@@ -7801,7 +7801,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 116.84 34.29 0)
+			(at 117.094 25.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8029,7 +8029,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 45.72 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8063,7 +8063,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 48.26 43.815 0)
 			(effects
 				(font
@@ -8074,7 +8074,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 45.72 34.29 0)
+			(at 45.974 25.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8236,7 +8236,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 134.62 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8270,7 +8270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 137.16 79.375 0)
 			(effects
 				(font
@@ -8281,7 +8281,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 134.62 69.85 0)
+			(at 134.874 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8311,7 +8311,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "mzm_kicad:SK6812MINI-E")
 		(at 116.84 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8345,7 +8345,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(property "Datasheet" "https://shop.yushakobo.jp/products/sk6812mini-e-10"
 			(at 119.38 114.935 0)
 			(effects
 				(font
@@ -8356,7 +8356,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 116.84 105.41 0)
+			(at 117.094 96.266 0)
 			(effects
 				(font
 					(size 1.27 1.27)

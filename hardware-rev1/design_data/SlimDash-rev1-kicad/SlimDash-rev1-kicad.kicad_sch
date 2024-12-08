@@ -13183,7 +13183,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Keebio-Parts:TRRS-PJ-320A"
+		(property "Footprint" "mzm_misc:TRRS_jack"
 			(at 147.32 46.99 0)
 			(effects
 				(font
@@ -16707,7 +16707,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Keebio-Parts:TRRS-PJ-320A"
+		(property "Footprint" "mzm_misc:TRRS_jack"
 			(at 147.32 64.77 0)
 			(effects
 				(font
