@@ -9976,7 +9976,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ai03-2725_Type-C:HRO-TYPE-C-31-M-12-Assembly"
+		(property "Footprint" "mzm_LCSC:USB-C_SMD-TYPE-C-31-M-12"
 			(at 120.65 133.35 90)
 			(effects
 				(font
