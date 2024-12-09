@@ -9,33 +9,17 @@ is needed for design decisions.
 
 ### TODOs
 
-* ergogen (part 1) → DONE
-  * create general outline of the PCB and plates.
-  * create base PCB layout with the switch and Diode footprints
 * KiCAD
-  * create matching schematic
-  * import the PCB design from ergogen and match with schematic
-  * adjust footprints and part BOM
-    * smt diode needs to be matched for proper size BOM
-  * Import the schematic from ergoSHIFT rev2
-    * consider adding surge protect to USB using C15879 or C283483
-      * D+, D- and VBUS merits from protection.
-    * consider using C6186 for voltage regulator instead?
-  * Place parts
+  * Schematics
+    * should be complete
+  * PCB desing
+    * trace routing for RGB LEDs
+  * Gerber data generation
+    * TBD
+    * Double check on parts footprint and part catalogue No.
 * ergogen
-  * after placing PCB parts, create cutout for the right backplate for the PCB parts
-    * RP2040 stuff
-    * Flash memory
-    * USB-C connector
-    * XTAL
-    * power
-    * passive components(RC)
-    * throughhole mounted parts (TRRS Jack, type C and tactile switch for reset
-      and boot)
-  * after placing PCB parts, create cutout for the left backplate for the PCB parts
-    * throughhole mounted parts (TRRS Jack, type C and tactile switch for reset
-      and boot)
-  * adjust outer dimensions to fit the parts if necessary.
+  * I think we are done?
+  * double check after PCB layout is done
 * QMK configuration
   * Make the `info.json`, `config.h` and `rules.mk`
     * First make the info.json
@@ -57,27 +41,6 @@ is needed for design decisions.
         * command: false
         * console: false
 
-#### Outstanding design choices (Hardware Design)
-
-Below are some desing choices that need deciding.
-
-* TRRS Wiring for Split key and how this should be configured
-  * Handedness should be detectable using USB Host detection
-    * use `#define MASTER_LEFT` in config.h -> how to do this on info.json?
-  * Using PIO
-    * for RP2040, PIO can be used on any pin.
-    * Full Duplex? or Half Duplex?
-    * For Full Duplex, TX and RX needs to be swapped on left and right PCB.
-      * Should I mess with footprints to cross wire TRRS on left and right on the
-        reversible design of the PCB?
-      * A: apparently not.  Needs PCB side flipping.
-        * Probably better making my own reversible/crosswire TRRS footprint.
-    * Pull up resistors? when it is/isn't needed?
-      * HALF Duplex uses open drain and require pull up resistors, but FULL Duplex
-        doesn't.
-      * RP2040 PIO can run HALF duplex with internal pull ups? and is not required.
-* RGB MATRIX wiring and how this should be configured
-
 ## Acknowlegements
 
 * [ErgoDash by omkbd](https://github.com/omkbd/ErgoDash)
@@ -87,3 +50,12 @@ Below are some desing choices that need deciding.
 * Tutorials to get me started with ergogen
   * [Let's Design A Keyboard With Ergogen v4](https://flatfootfox.com/ergogen-part2-outlines/)
   * [I Built My Dream Keyboard from Absolute Scratch](https://www.youtube.com/watch?v=7UXsD7nSfDY)
+
+## License
+
+[SlimDash](https://github.com/mizma/SlimDash) by
+[mizma](https://github.com/mizma) is licensed under
+[Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
+![CC](https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1)-
+![by](https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1)-
+![SA](https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1)
