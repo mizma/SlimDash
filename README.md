@@ -56,6 +56,6 @@ is needed for design decisions.
 [SlimDash](https://github.com/mizma/SlimDash) by
 [mizma](https://github.com/mizma) is licensed under
 [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
-![CC](https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1)-
-![by](https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1)-
-![SA](https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1)
+<img alt='CC' src='https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1' height='12pt'>-
+<img alt='by' src='https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1' height='12pt'>-
+<img alt='SA' src='https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1' height='12pt'>
