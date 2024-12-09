@@ -341,9 +341,9 @@ outlines:
         - ref: inner_icone_irthree
           shift: [0.5U+2, 0.5U+2]
         - ref: inner_icone_irthree
-          shift: [0.5U+2, -3U]
+          shift: [0.5U+2, -3U-1]
         - ref: inner_icone_irthree
-          shift: [2U+2, -3U]
+          shift: [2U+2, -3.9U-1]
         - ref: inner_icone_irthree
           shift: [2U+2, 0.5U+2]
       fillet: 2.5
