@@ -31,6 +31,10 @@ fp-info-cache
 # Created by https://www.toptal.com/developers/gitignore/api/node
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
 
+# Production tools
+production/
+fabrication-toolkit-options.json
+
 ### Node ###
 # Logs
 logs
