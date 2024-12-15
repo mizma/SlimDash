@@ -1,6 +1,6 @@
 # SlimDash
 
-![SlimDash-Logo](./Assets/SlimDash Logo-small.png)
+![SlimDash-Logo](./Assets/SlimDash_Logo-small.png)
 
 ErgoDash inspired low-profile key switch keyboard with embedded RP2040
 
