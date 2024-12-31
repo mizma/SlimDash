@@ -8,6 +8,52 @@ ErgoDash inspired low-profile key switch keyboard with embedded RP2040
 
 Please check back later.
 
+### Parts List
+
+* PCB
+  * Order with PCBA using ./hardware-rev1/PCB/slimdash_v1.0.0.zip and
+    BOM/CPL files in the same directory.
+* Acrylic: Order cuts for following (number required for one keyboard)
+  * `backplate_1left_3mm-157.1x131.2.zip` x 1
+  * `backplate_1right_3mm-155.2x131.2.zip` x 1
+  * `backplate_2both_2mm-157.1x131.2.zip` x 1
+  * `backplate_2left_2mm-157.1x131.2.zip` x 1
+  * `backplate_3both_2mm-157.1x39.02.zip` x 2
+  * `baseplate_left_2mm-155.2x131.2.zip` x 1
+  * `baseplate_right_2mm-155.2x131.2.zip` x 1
+  * `coverplate_both_2mm-20.05x81.60.zip` x 2
+* Screws/standoff
+  * 14x m2x4 through-hole standoff x 7 x 2 = 14
+    * <https://www.monotaro.com/p/1111/2876/>
+  * 6x m2x10 through-hole standoff x 3 x 2 = 6
+    * <https://www.monotaro.com/p/1111/2998/>
+  * 32x m2x4 screws x (10 + 6) x 2 = 32
+    * <https://www.monotaro.com/p/2902/9395/>
+  * 8x m2x6 screws x 4 x 2 = 8
+    * <https://www.monotaro.com/p/2902/9413/>
+* Hand-Soldered Items
+  * 70x Kailh low profile (choc v1) switches of your choice
+  * 70x Kailh low profile hotswap sockets
+    * Can be ordered from LCSC with part number [C5333465](https://www.lcsc.com/product-detail/Mechanical-Keyboard-Shaft_Kailh-CPG135001S30_C5333465.html)
+  * 4x 3x6x4.3 horizontal tact switch
+    * <https://www.newegg.com/p/2S7-01KR-035X0>
+    * <https://shop.yushakobo.jp/collections/all-keyboard-parts/products/a1600ed-01-1>
+    * You can also order from LCSC with part number [C18078123](https://www.lcsc.com/product-detail/Tactile-Switches_Bossie-BX-TS-26-3643ZJ_C18078123.html)
+    * MJTP1117/PHAP3363 from DigiKey should work as well [679-2400-ND](https://www.digikey.com/en/products/detail/apem-inc/MJTP1117/1795496)
+    * [schematics](images/tactile-switch_3x6x4.3.jpg)
+  * 2x TRRS socket (MJ-4PP-9) connector
+  * (optional) 70x SK6812MINI-E
+    * <https://shop.yushakobo.jp/products/sk6812mini-e-10?variant=40047782953121>
+    * [C5149201](https://www.lcsc.com/product-detail/RGB-LEDs-Built-in-IC_OPSCO-Optoelectronics-SK6812MINI-E_C5149201.html)
+* A Kailh Choc v1 compatible keycap set
+  * recommend ortho linear keycap set
+* Other Accessories
+  * 1x TRRS Cable (Straight)
+    * <https://shop.yushakobo.jp/products/self-made-cable?variant=39623339737249>
+    * Anything with Tip-Ring-Ring-Sleeve type 2.5mm jack with straight wiring
+      should work.
+  * 1x USB-C Cable (Type-A to C or Type-C to C depending on your host PC connector)
+
 ### TODOs
 
 * ergogen
@@ -21,13 +67,10 @@ Please check back later.
     * BP2 layer: 2mm (m2 screw hole)
     * BP3 layer: 2mm (m2 screw hole)
     * Main standoff: 4mm-4.6mm
-      * [monotaro](https://www.monotaro.com/p/4226/7784/?t.attr_f2=M2&t.q=%83X%83y%81%5B%83T%81%5B%20%91S%83l%83W)
     * Main screws from top: 2mm+screw length (~2mm) = 4mm
-      * [monotaro](https://www.monotaro.com/p/4174/6695/?t.attr_f2=M2&t.q=m2%20%83l%83W)
     * Main screws from bottom: 2mm+screw length (~2mm) = 4mm
     * Main screws from BP3: 4mm+ screw length (~2mm) = 6mm
-      * [monotaro](https://www.monotaro.com/p/4174/6713/?t.attr_f2=M2&t.q=m2%20%83l%83W)
-    * Cover Plate standoff: 4.6mm + parts height (3.4mm+) = 8mm
+    * Cover Plate standoff: 4.6mm + parts height (5.4mm+) = 10mm
     * Cover Plate screw from top: 2mm+screw length = 4mm
     * Cover Plate screw from bottom: 2mm+screw length = 4mm
     * Cover Plate screw from BP3: 4mm+screw length(~2mm) = 6mm
