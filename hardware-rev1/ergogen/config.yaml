@@ -320,6 +320,12 @@ outlines:
       size: [17, 10]
       adjust:
         shift: [-1.25, -2.4]
+    - what: rectangle # Kailh socket cutout
+      operation: subtract
+      where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
+      size: [6, 6]
+      adjust:
+        shift: [0, -5.95]
     - what: rectangle # RGB LED cutout
       operation: subtract
       where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
@@ -369,6 +375,12 @@ outlines:
     - what: outline
       name: diode_cutout
       operation: subtract
+    - what: rectangle # Kailh socket cutout
+      operation: subtract
+      where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
+      size: [6, 6]
+      adjust:
+        shift: [0, -5.95]
     - what: rectangle # RGB LED Cutout
       operation: subtract
       where: /^(matrix|inner|lower|thumb|thumbOuter)_.*/
@@ -387,10 +399,27 @@ outlines:
       size: [4.5, 5.5]
       adjust:
         shift: [9, 3]
+  backplate_2left:
+    - what: outline
+      name: board_left
+      fillet: 2.5
+    - what: outline
+      name: screw_holes_cover
+      operation: subtract
+    - what: outline
+      name: screw_holes_left
+      operation: subtract
   backplate_2both:
     - what: outline
       name: board_left
       fillet: 2.5
+    - what: rectangle # USB-C Connector Cutout
+      operation: subtract
+      where: inner_icone_irthree
+      size: [10.64, 9.42]
+      adjust:
+        shift: [0.85U+0.6, 0.437U-1.5]
+      fillet: 0.5
     - what: outline
       name: screw_holes_cover
       operation: subtract
