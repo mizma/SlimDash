@@ -17,8 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-// TODO: replace UID using `python3 util/vial_generate_keyboard_uid.py`
-// #define VIAL_KEYBOARD_UID {0xXX, 0xXX, 0xXX, 0xXX, 0xXX, 0xXX, 0xXX, 0xXX}
+#define VIAL_KEYBOARD_UID {0xF8, 0x33, 0xE5, 0xA6, 0x5B, 0x24, 0x72, 0x00}
 
 #define VIAL_UNLOCK_COMBO_ROWS {0, 9}
 #define VIAL_UNLOCK_COMBO_COLS {0, 5}
