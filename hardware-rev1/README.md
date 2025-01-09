@@ -1,5 +1,8 @@
 # hardware-rev1 Build Instructions
 
+__IMPORTANT__.  Read through the entire instruction first before starting
+the Assembly so you have a good idea on what to expect!
+
 ## Parts List (for one keyboard)
 
 * PCB
