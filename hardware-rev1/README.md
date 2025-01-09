@@ -182,6 +182,8 @@ Put your choice of key caps.
 You may apply rubber feet stickers on the back side for better stability and
 stop the keyboard from sliding around in use.
 
+![Rubber Feet](./Assets/ASSEMBLY015.jpg)
+
 ### RGB Instructions
 
 You will need to first jump the `JP1` solder jumper right next to the TRRS Jack.
