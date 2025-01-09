@@ -22,16 +22,18 @@ ErgoDash inspired low-profile key switch keyboard with embedded RP2040
   * Assembly
     * Just PH001 Philips screws necessary
 
-## Still in development
+### Variations
 
-Please check back later.
+Currently there is only one variation.
 
-### Parts List
+* SlimDash rev.1
+  * See the [readme](./hardware-rev1/README.md) in the hardware-rev1
+    directory for build instructions.
+  * For firmware, see [here](./firmware/keyboards/mzmkb/slimdash/readme.md)
 
 ### TODOs
 
-* Make build instruction for rev1 hardware
-* open PR to qmk-firmware and vial-qmk repos.
+* Open PR to qmk-firmware and vial-qmk repos.
   * check if vial-qmk PR should wait for upstream RGB related changes to land?
 
 ## Acknowlegements

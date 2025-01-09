@@ -184,7 +184,7 @@ stop the keyboard from sliding around in use.
 
 ### RGB Instructions
 
-You will need to first jump the J1 solder jumper right next to the TRRS Jack.
+You will need to first jump the `JP1` solder jumper right next to the TRRS Jack.
 
 Then solder the SK6812MINI-E from the back of the PCB, with the light emitting
 side facing up.
