@@ -4,6 +4,8 @@
 
 ErgoDash inspired low-profile key switch keyboard with embedded RP2040
 
+![SlimDash rev.1](./Assets/SlimDash_Build_Sample.jpg)
+
 ## Still in development
 
 Please check back later.
@@ -56,44 +58,9 @@ Please check back later.
 
 ### TODOs
 
-* ergogen
-  * I think we are done?
-  * double check after PCB layout is done
-  * Fix BP2 to accommodate
-  * Stackup plan
-    * Top layer: 2mm (m2 screw hole)
-    * PCB layer: 1.6mm (m2 standoff)
-    * BP1 layer: 3mm (m2 standoff)
-    * BP2 layer: 2mm (m2 screw hole)
-    * BP3 layer: 2mm (m2 screw hole)
-    * Main standoff: 4mm-4.6mm
-    * Main screws from top: 2mm+screw length (~2mm) = 4mm
-    * Main screws from bottom: 2mm+screw length (~2mm) = 4mm
-    * Main screws from BP3: 4mm+ screw length (~2mm) = 6mm
-    * Cover Plate standoff: 4.6mm + parts height (5.4mm+) = 10mm
-    * Cover Plate screw from top: 2mm+screw length = 4mm
-    * Cover Plate screw from bottom: 2mm+screw length = 4mm
-    * Cover Plate screw from BP3: 4mm+screw length(~2mm) = 6mm
-* QMK configuration
-  * Make the `info.json`, `config.h` and `rules.mk`
-    * First make the info.json
-    * add what ever is not configurable on info.json using config.h and rules.mk
-      using the function manuals
-    * Following Needs configuration
-      * Key MATRIX
-      * Hardware config (processor, bootloader type etc.)
-      * Firmware config
-      * USB
-      * Layouts
-      * Features
-        * Split Keyboard
-        * RGB Matrix (if I decide to add them)
-        * bootmagic: false?
-        * mousekey: true
-        * extrakey: true
-        * nkro: true
-        * command: false
-        * console: false
+* Make build instruction for rev1 hardware
+* open PR to qmk-firmware and vial-qmk repos.
+  * check if vial-qmk PR should wait for upstream RGB related changes to land?
 
 ## Acknowlegements
 
@@ -104,7 +71,7 @@ Please check back later.
 * Tutorials to get me started with ergogen
   * [Let's Design A Keyboard With Ergogen v4](https://flatfootfox.com/ergogen-part2-outlines/)
   * [I Built My Dream Keyboard from Absolute Scratch](https://www.youtube.com/watch?v=7UXsD7nSfDY)
-* Tools used for making `keyboard.json` less tedious.
+* Tools used for making `keyboard.json` _less_ tedious.
   * [KLE](https://www.keyboard-layout-editor.com/)
   * [Keyboard Firmware Builder](https://kbfirmware.com/)
   * [KBFirmware to qmk converter](https://noroadsleft.github.io/kbf_qmk_converter/)
