@@ -198,4 +198,4 @@ See the pictures for the correct orientation (PIN1 is marked with yellow dot).
 Note: the pin that has a diagonal cut is NOT PIN1.  Diagonal cut pin is diagonally
 opposite from PIN1 marked on the picture above with yellow dot.
 
-[SK6812MINI-E schematic](./Assets/SK6812MINI_E_Schematics.jpg)
+![SK6812MINI-E schematic](./Assets/SK6812MINI_E_Schematics.jpg)
