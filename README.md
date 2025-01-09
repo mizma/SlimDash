@@ -31,7 +31,11 @@ Currently there is only one variation.
 * SlimDash rev.1
   * See the [readme](./hardware-rev1/README.md) in the hardware-rev1
     directory for build instructions.
-  * For firmware, see [here](./firmware/keyboards/mzmkb/slimdash/readme.md)
+  * For firmware, see the release section for pre-built firmware,
+    or see [here](./firmware/keyboards/mzmkb/slimdash/) for the build source.
+    * To build from source, follow the [instructions](https://docs.qmk.fm/newbs_getting_started)
+      and copy the keyboard sources from this repo (until the keyboard
+      is merged upstream) to build.
 
 ### TODOs
 
