@@ -6,6 +6,8 @@ ErgoDash inspired low-profile key switch keyboard with embedded RP2040
 
 ![SlimDash rev.1](./Assets/SlimDash_Build_Sample.jpg)
 
+![PCB Image](./hardware-rev1/Assets/PCB1.jpg)
+
 ## Features
 
 * Ortho-Staggered Split keyboard layout
