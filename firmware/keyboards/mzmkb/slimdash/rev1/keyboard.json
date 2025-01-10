@@ -2,17 +2,10 @@
     "keyboard_name": "slimdash rev1.0",
     "diode_direction": "COL2ROW",
     "features": {
-        "audio": false,
-        "backlight": false,
-        "bootmagic": false,
-        "command": false,
-        "console": false,
         "extrakey": true,
-        "key_lock": false,
         "mousekey": true,
         "nkro": true,
         "rgb_matrix": true,
-        "rgblight": false
     },
     "matrix_pins": {
         "cols": ["GP0", "GP1", "GP3", "GP5", "GP8", "GP7", "GP9"],
@@ -143,7 +136,6 @@
         "split_count": [35, 35]
     },
     "split": {
-        "enabled": true,
         "matrix_pins": {
             "right": {
                 "cols": ["GP0", "GP1", "GP3", "GP5", "GP8", "GP7", "GP9"],
@@ -154,13 +146,9 @@
             "driver": "vendor"
         },
         "transport": {
-            "protocol": "serial",
             "sync": {
                 "matrix_state": true
             }
-        },
-        "usb_detect": {
-            "enabled": true
         }
     },
     "usb": {
@@ -172,8 +160,9 @@
         "driver": "vendor",
         "pin": "GP20"
     },
+    "community_layouts": [ "ortho_5x14" ],
     "layouts": {
-        "LAYOUT": {
+        "LAYOUT_ortho_5x14": {
             "layout": [
                 {"matrix": [0, 0], "x": 0, "y": 0.375},
                 {"matrix": [0, 1], "x": 1, "y": 0.375},
