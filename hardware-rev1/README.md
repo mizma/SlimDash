@@ -3,6 +3,8 @@
 __IMPORTANT__.  Read through the entire instruction first before starting
 the Assembly so you have a good idea on what to expect!
 
+日本語の手順は[こちら](./README_ja.md)
+
 ## Parts List (for one keyboard)
 
 * PCB
@@ -160,13 +162,13 @@ some solder using solder wick.
 __OPTIONAL__: you may solder the SK6812MINI-E RGB LEDs at this point if you would
 like.  See section below for extra instructions.
 
-After Sockets are soldered, place the backplate on the front side and insert
+After Sockets are soldered, place the baseplate on the front side and insert
 the kailh choc v1 keyswitches of your choice.  After all the switches are inserted,
 place the 4mm long M2 spacer (standoff) from the back side, and loosely secure it
 with the 4mm long M2 screws.
 
-![Switch and backplate assembly](./Assets/ASSEMBLY010.jpg)
-![Switch and backplate assembly from back](./Assets/ASSEMBLY011.jpg)
+![Switch and baseplate assembly](./Assets/ASSEMBLY010.jpg)
+![Switch and baseplate assembly from back](./Assets/ASSEMBLY011.jpg)
 
 Flip the board to the back, place the backplate 1 ~ 3 and screw in the
 4mm and 6mm screws. 6mm screws are used for the screw holes that go
