@@ -37,11 +37,6 @@ Currently there is only one variation.
       and copy the keyboard sources from this repo (until the keyboard
       is merged upstream) to build.
 
-### TODOs
-
-* Open PR to qmk-firmware and vial-qmk repos.
-  * check if vial-qmk PR should wait for upstream RGB related changes to land?
-
 ## Acknowlegements
 
 * [ErgoDash by omkbd](https://github.com/omkbd/ErgoDash)
